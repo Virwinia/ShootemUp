@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876ff5cc09bdce74ab79964cdbd7210b, type: 3}
+  m_Name: Npc_Meteor_0
+  m_EditorClassIdentifier: 
+  id: 0
+  enemyName: Enm_Meteor_0
+  score: 100
+  health: 1
+  prefabExplosionDamage: {fileID: 7597640974356340166, guid: 281f134289539be46ab3595e59b20347, type: 3}
+  prefabExplosionDeath: {fileID: 7208627865260691666, guid: 7375b0541e237bf48b53dd368ddba8d1, type: 3}
