@@ -472,7 +472,7 @@ SpriteRenderer:
   m_SortingLayerID: 1526732501
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc2c8407832322e458d8c39398fbc66b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d36c49098eb37a449ff8d9afefa3dc9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 8054932824311935797}
   - component: {fileID: 8054932824311935798}
   - component: {fileID: 8054932824311935799}
-  - component: {fileID: 8054932824311935792}
+  - component: {fileID: 3019997045559848309}
   m_Layer: 6
   m_Name: Enemy_0
   m_TagString: Untagged
@@ -571,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcSO: {fileID: 11400000, guid: 62d378f4d9b7ace429180c9a43e9b644, type: 2}
+  looter: {fileID: 3019997045559848309}
   enemyHP: 0
   score: 0
 --- !u!114 &8054932824311935799
@@ -588,7 +589,7 @@ MonoBehaviour:
   amplitude: 2
   ySpeed: 0.5
   alphaDelta: 3
---- !u!114 &8054932824311935792
+--- !u!114 &3019997045559848309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -602,9 +603,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chanceToLootPowerUp: 0
   coins:
-  - {fileID: 11400000, guid: 1ba31ea1e9a61c34199cebc53798cc83, type: 2}
-  - {fileID: 11400000, guid: e97f6047ec748f14898b04acea905bda, type: 2}
-  - {fileID: 11400000, guid: 1457a76e8e8930041bf4cb0f1668267f, type: 2}
+  - {fileID: 11400000, guid: 09e81130f54d5b34a884659ab8532298, type: 2}
+  - {fileID: 11400000, guid: 09e81130f54d5b34a884659ab8532298, type: 2}
+  - {fileID: 11400000, guid: 09e81130f54d5b34a884659ab8532298, type: 2}
+  - {fileID: 11400000, guid: d55e46b9ed170f841bf086b9d029fa24, type: 2}
+  - {fileID: 11400000, guid: 6c3c74746f19b154dace423f10d819ef, type: 2}
   bezierValue:
     serializedVersion: 2
     m_Curve:

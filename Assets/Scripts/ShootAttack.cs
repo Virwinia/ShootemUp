@@ -1,23 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class ShootAttack : MonoBehaviour
 {
     public static ShootAttack ShootAttackInstance;
-    Shooting[] bullets;
+    CannonHandler cannonHandler;
+
+    private void Awake()
+    {
+        ShootAttackInstance = this;
+    }
 
     private void Start()
     {
-        ShootAttackInstance = this;
-        bullets = GetComponentsInChildren<Shooting>();
+        cannonHandler = GetComponent<CannonHandler>();
     }
 
     public void Shoot()
     {
-        foreach (Shooting shooting in bullets)
+        foreach (Shooting shooting in cannonHandler.cannons)
         {
-            shooting.CreateProjectile();
+            if (shooting.gameObject.activeInHierarchy)
+                shooting.CreateProjectile();
         }
     }
 }

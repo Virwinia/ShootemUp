@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerDataHandler : MonoBehaviour
 {
     [SerializeField] PlayerSO playerData;
-    [HideInInspector] public Sprite playerSprite;
-    [HideInInspector] public float speed;
-    [HideInInspector] public int level, health, amountCannons, fireRate;
+    [ReadOnly] public Sprite playerSprite;
+    [ReadOnly] public float speed;
+    [ReadOnly] public int level, health, amountCannons, fireRate;
 
     private void Awake()
     {

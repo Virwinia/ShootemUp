@@ -1,11 +1,12 @@
 
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] NpcSO npcSO;
-    [ReadOnly] [SerializeField] int enemyHP, score;
+    [SerializeField] GiveRandomLoot looter;
 
+    [ReadOnly] [SerializeField] int enemyHP, score;
     GameObject explosionDamage, explosionDeath;
 
     private void Start()
@@ -16,19 +17,21 @@ public class EnemyHealth : MonoBehaviour
         explosionDeath = npcSO.prefabExplosionDeath;
     }
 
-    public void RemoveHP(int damage, Vector3 v)
+    public void TakeDamage(int damage)
     {
         enemyHP -= damage;
-
-        if (explosionDamage != null)
-            Instantiate(explosionDamage, v, Quaternion.identity);//instanciar explosion en el punto en el que entra el daño
-        else Debug.LogWarning("Missing prefab reference explosionDamage in " + gameObject.name);
 
         if (enemyHP <= 0)
         {
             EnemyDeath();
-            GiveScoreAndLoot();
         }
+    }
+
+    public void PositionEffectsInHit(Vector3 hitPosition)
+    {
+        if (explosionDamage != null)
+            Instantiate(explosionDamage, hitPosition, Quaternion.identity);//instanciar explosion en el punto en el que entra el daño
+        else Debug.LogWarning("Missing prefab reference explosionDamage in " + gameObject.name);
     }
 
     void EnemyDeath()
@@ -39,11 +42,13 @@ public class EnemyHealth : MonoBehaviour
 
         AudioManager.audioManagerInstance.PlaySound(0);
         Destroy(gameObject);
+
+        GiveScoreAndLoot();
     }
 
     void GiveScoreAndLoot()
     {
-        GetComponent<GiveRandomLoot>().CalculateLootingChances();
+        looter.CalculateLootingChances();
         ScoreManager.scoreManager.AddScore(score);      // When enemy dies, gives score to the player
     }
 }

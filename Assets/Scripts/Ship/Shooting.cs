@@ -7,14 +7,13 @@ public class Shooting : MonoBehaviour
 
     public void CreateProjectile()
     {
-        GameObject bullet = ObjectPool.ObjectPoolInstance.GetPooledObject();
+        GameObject bullet = ObjectPoolManager.ObjectPoolInstance.GetPooledObject();
         if (bullet != null)
         {
             bullet.transform.position = gameObject.transform.position;
             bullet.transform.rotation = gameObject.transform.rotation;
             bullet.SetActive(true);
         }
-        Instantiate(bulletPrefab, transform.position, Quaternion.identity);
     }
 
 }

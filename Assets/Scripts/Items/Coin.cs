@@ -11,10 +11,13 @@ public class Coin : MonoBehaviour
     [Space] [SerializeField] Vector3 coinVelocity;
 
     [Space] [ReadOnly] [SerializeField] int score;
+    public Vector2 position;
+
 
     private void Awake()
     {
         score = coinData.score;
+        position = this.gameObject.transform.position;
     }
 
     void Start()
@@ -36,5 +39,4 @@ public class Coin : MonoBehaviour
         // SoundFXManager.soundFXManagerInstance.PlaySound(2);
         Destroy(gameObject);
     }
-
 }

@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class PlayerShootingController : MonoBehaviour
 {
-    // Shooting[] bullets;
-    [SerializeField] bool isAutomatic;
+    bool isAutomatic = true;
     int fireRate;
     int bulletCounter;
 
-    // private void Awake()
-    // {
-    //     bullets = GetComponentsInChildren<Shooting>();
-    // }
-    private void OnEnable()
+    private void Start()
     {
         PlayerDataHandler playerData = GetComponent<PlayerDataHandler>();
         fireRate = playerData.fireRate;
@@ -38,12 +33,4 @@ public class PlayerShootingController : MonoBehaviour
         }
     }
 
-
-    // public void Shoot()
-    // {
-    //     foreach (Shooting shooting in bullets)
-    //     {
-    //         shooting.CreateProjectile();
-    //     }
-    // }
 }

@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: ef7833144b8fa924e8c0da62ccc6fe93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1101466647962384675
+    second: animated gems_1
+  - first:
+      213: -1365046005676739568
+    second: animated gems_2
+  - first:
+      213: 58251602916398539
+    second: animated gems_3
+  - first:
+      213: -487940330377479868
+    second: animated gems_4
+  - first:
+      213: 600992456424265150
+    second: animated gems_5
+  - first:
+      213: -8393249720526245489
+    second: animated gems_6
+  - first:
+      213: -6109238741663050503
+    second: animated gems_7
+  - first:
+      213: 8047641493457766330
+    second: animated gems_8
+  - first:
+      213: 2764068151298468679
+    second: animated gems_10
+  - first:
+      213: -1111490538957021371
+    second: animated gems_11
+  - first:
+      213: 3906760762545799438
+    second: animated gems_12
+  - first:
+      213: -1773615257580990904
+    second: animated gems_13
+  - first:
+      213: -1312665277443045093
+    second: animated gems_14
+  - first:
+      213: 5706418084524032541
+    second: animated gems_15
+  - first:
+      213: -3259547218365118206
+    second: animated gems_16
+  - first:
+      213: 3422379422289607935
+    second: animated gems_17
+  - first:
+      213: 5868953118979551625
+    second: animated gems_18
+  - first:
+      213: 8122676753804853870
+    second: animated gems_19
+  - first:
+      213: -1113280508860669100
+    second: animated gems_20
+  - first:
+      213: -3723729752941830790
+    second: animated gems_21
+  - first:
+      213: 6376742669601496890
+    second: animated gems_22
+  - first:
+      213: 2993268129872383069
+    second: animated gems_23
+  - first:
+      213: -5395543725782613623
+    second: animated gems_24
+  - first:
+      213: -3477805347250139697
+    second: animated gems_25
+  - first:
+      213: 5286388359282042792
+    second: animated gems_26
+  - first:
+      213: -2522148685109400062
+    second: animated gems_27
+  - first:
+      213: 8580053415241831565
+    second: animated gems_28
+  - first:
+      213: -3124642314303362828
+    second: animated gems_29
+  - first:
+      213: -3513012738283440847
+    second: animated gems_30
+  - first:
+      213: 1159796831392553739
+    second: animated gems_31
+  - first:
+      213: -1831866932855286458
+    second: animated gems_32
+  - first:
+      213: -797285625342178652
+    second: animated gems_33
+  - first:
+      213: 3672217149264848921
+    second: animated gems_34
+  - first:
+      213: -6289405340461503839
+    second: animated gems_35
+  - first:
+      213: -3191479810966974249
+    second: animated gems_36
+  - first:
+      213: 4606461654847623131
+    second: animated gems_37
+  - first:
+      213: 5256616834846239893
+    second: animated gems_38
+  - first:
+      213: -2899934291566626077
+    second: animated gems_39
+  - first:
+      213: 233873568815180730
+    second: animated gems_40
+  - first:
+      213: 9022401469846812691
+    second: animated gems_41
+  - first:
+      213: 371807228058381616
+    second: animated gems_42
+  - first:
+      213: -1200322001616550143
+    second: animated gems_43
+  - first:
+      213: 4472824024886032958
+    second: animated gems_44
+  - first:
+      213: 3592632264082506854
+    second: animated gems_45
+  - first:
+      213: 5697314508570119888
+    second: animated gems_46
+  - first:
+      213: -9020158062230958582
+    second: animated gems_47
+  - first:
+      213: 4042587450777185163
+    second: animated gems_48
+  - first:
+      213: 6757664660862819453
+    second: animated gems_49
+  - first:
+      213: -3265855584663846827
+    second: animated gems_50
+  - first:
+      213: -2804937874520507519
+    second: animated gems_51
+  - first:
+      213: 7981602667141202302
+    second: animated gems_52
+  - first:
+      213: 4117921781302227729
+    second: animated gems_53
+  - first:
+      213: 226515392758728231
+    second: animated gems_54
+  - first:
+      213: -4025836968039085672
+    second: animated gems_55
+  - first:
+      213: -4959419833071799943
+    second: animated gems_56
+  - first:
+      213: 3476100222342579332
+    second: animated gems_57
+  - first:
+      213: 1978097143965733018
+    second: animated gems_58
+  - first:
+      213: -7811827664444592383
+    second: animated gems_59
+  - first:
+      213: 4201725603319315675
+    second: animated gems_60
+  - first:
+      213: -6719939432321206060
+    second: animated gems_61
+  - first:
+      213: -8299169453844013350
+    second: animated gems_62
+  - first:
+      213: -8281731535570243952
+    second: animated gems_63
+  - first:
+      213: 2000518894556867067
+    second: animated gems_64
+  - first:
+      213: 6679774495634861301
+    second: animated gems_65
+  - first:
+      213: 1453847527832282354
+    second: animated gems_66
+  - first:
+      213: 6040291419571531231
+    second: animated gems_67
+  - first:
+      213: 7647750992627683187
+    second: animated gems_68
+  - first:
+      213: 7903711030756646471
+    second: animated gems_69
+  - first:
+      213: 1874146357411674695
+    second: animated gems_70
+  - first:
+      213: 3268404787789647194
+    second: animated gems_71
+  - first:
+      213: -1872462981636085611
+    second: animated gems_72
+  - first:
+      213: 2424965900604478284
+    second: animated gems_73
+  - first:
+      213: 4504225453542573770
+    second: animated gems_74
+  - first:
+      213: -88973029465029100
+    second: animated gems_75
+  - first:
+      213: 1439304311449880637
+    second: animated gems_77
+  - first:
+      213: -2329855042877362686
+    second: animated gems_78
+  - first:
+      213: 2751798404168425374
+    second: animated gems_79
+  - first:
+      213: -6827550254511186554
+    second: animated gems_80
+  - first:
+      213: -3869938327042315514
+    second: animated gems_81
+  - first:
+      213: 3238761415081381931
+    second: animated gems_82
+  - first:
+      213: 1324418628518915490
+    second: animated gems_83
+  - first:
+      213: -4538015890778322124
+    second: animated gems_84
+  - first:
+      213: -5580141478973283345
+    second: animated gems_85
+  - first:
+      213: -6834610071261943329
+    second: animated gems_0
+  - first:
+      213: 1464255542565183419
+    second: animated gems_86
+  - first:
+      213: -2761920975039169890
+    second: animated gems_87
+  - first:
+      213: -5404696662693516180
+    second: animated gems_88
+  - first:
+      213: -7718589720161405251
+    second: animated gems_9
+  - first:
+      213: -6073485861171640615
+    second: animated gems_89
+  - first:
+      213: 2170768381273060290
+    second: animated gems_90
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animated gems_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329fcbb9412394f00800000000000000
+      internalID: 1101466647962384675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0147291e3e16e0de0800000000000000
+      internalID: -1365046005676739568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5dd633683fec000800000000000000
+      internalID: 58251602916398539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4497340dadc7a39f0800000000000000
+      internalID: -487940330377479868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb59bd57477275800800000000000000
+      internalID: 600992456424265150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81f2e839df258b80800000000000000
+      internalID: -8393249720526245489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f49e1b8bbf973ba0800000000000000
+      internalID: -6109238741663050503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab78e31dc47feaf60800000000000000
+      internalID: 8047641493457766330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_10
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bad15c651fb5620800000000000000
+      internalID: 2764068151298468679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f52466e313390f0800000000000000
+      internalID: -1111490538957021371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e010af1f63a973630800000000000000
+      internalID: 3906760762545799438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e0cabf15ad267e0800000000000000
+      internalID: -1773615257580990904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19840d82e978cde0800000000000000
+      internalID: -1312665277443045093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d128be39305413f40800000000000000
+      internalID: 5706418084524032541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2090cb02313c3c2d0800000000000000
+      internalID: -3259547218365118206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcbd28b3fbbe7f20800000000000000
+      internalID: 3422379422289607935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981723444c5b27150800000000000000
+      internalID: 5868953118979551625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_19
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e628cd7c87b89b070800000000000000
+      internalID: 8122676753804853870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4536efd8645dc80f0800000000000000
+      internalID: -1113280508860669100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_21
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d5954d487a25cc0800000000000000
+      internalID: -3723729752941830790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_22
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f5cad2cadbe7850800000000000000
+      internalID: 6376742669601496890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_23
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c8a8e41893a8920800000000000000
+      internalID: 2993268129872383069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_24
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981c3a6719d2f15b0800000000000000
+      internalID: -5395543725782613623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_25
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd833f767a5cbfc0800000000000000
+      internalID: -3477805347250139697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_26
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 178
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a724cb44360d5940800000000000000
+      internalID: 5286388359282042792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_27
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ee55142278ffcd0800000000000000
+      internalID: -2522148685109400062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_28
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84dd514f19721770800000000000000
+      internalID: 8580053415241831565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_29
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f82bc5ce5a03a4d0800000000000000
+      internalID: -3124642314303362828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135713bf6854f3fc0800000000000000
+      internalID: -3513012738283440847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bd6c2c21d681010800000000000000
+      internalID: 1159796831392553739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_32
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645506feab6e396e0800000000000000
+      internalID: -1831866932855286458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_33
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa44fca2f87fe4f0800000000000000
+      internalID: -797285625342178652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_34
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91867008a0656f230800000000000000
+      internalID: 3672217149264848921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_35
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aae8516a2b87b8a0800000000000000
+      internalID: -6289405340461503839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_36
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d09b77650695b3d0800000000000000
+      internalID: -3191479810966974249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf86a018707def30800000000000000
+      internalID: 4606461654847623131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_38
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c2959192143f840800000000000000
+      internalID: 5256616834846239893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_39
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea7237502d51c7d0800000000000000
+      internalID: -2899934291566626077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_40
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbe49f85c2ee3300800000000000000
+      internalID: 233873568815180730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_41
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 136
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3187e278552063d70800000000000000
+      internalID: 9022401469846812691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03da75934bce82500800000000000000
+      internalID: 371807228058381616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_43
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1074f85cf79975fe0800000000000000
+      internalID: -1200322001616550143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_44
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a3a2aa0c9a21e30800000000000000
+      internalID: 4472824024886032958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664ce3572089bd130800000000000000
+      internalID: 3592632264082506854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_46
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de40012c5de01f40800000000000000
+      internalID: 5697314508570119888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_47
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e09d28806f1d280800000000000000
+      internalID: -9020158062230958582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_48
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ba6013ed72a1830800000000000000
+      internalID: 4042587450777185163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_49
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c50f5943c08cd50800000000000000
+      internalID: 6757664660862819453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_50
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550c26426a95da2d0800000000000000
+      internalID: -3265855584663846827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_51
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b7a244ddbd219d0800000000000000
+      internalID: -2804937874520507519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_52
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e710341665954ce60800000000000000
+      internalID: 7981602667141202302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_53
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113fc5bda0cc52930800000000000000
+      internalID: 4117921781302227729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_54
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726ca81bc8eb42300800000000000000
+      internalID: 226515392758728231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_55
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899056c7b9a5128c0800000000000000
+      internalID: -4025836968039085672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_56
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9717abd10f99c2bb0800000000000000
+      internalID: -4959419833071799943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_57
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484c26c2cb69d3030800000000000000
+      internalID: 3476100222342579332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_58
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90da4d3fdc937b10800000000000000
+      internalID: 1978097143965733018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_59
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fe536c020d69390800000000000000
+      internalID: -7811827664444592383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_60
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcf28dac278f4a30800000000000000
+      internalID: 4201725603319315675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8ba58a0bafdb2a0800000000000000
+      internalID: -6719939432321206060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_62
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adedad44a5d63dc80800000000000000
+      internalID: -8299169453844013350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_63
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e6f210c01611d80800000000000000
+      internalID: -8281731535570243952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_64
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9e48cd55543cb10800000000000000
+      internalID: 2000518894556867067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_65
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fca708438353bc50800000000000000
+      internalID: 6679774495634861301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_66
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4e50eaf9a1d2410800000000000000
+      internalID: 1453847527832282354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_67
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdda6631b0d63d350800000000000000
+      internalID: 6040291419571531231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_68
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 53
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fc63e1205422a60800000000000000
+      internalID: 7647750992627683187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_69
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 94
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e169b8e4f9fad60800000000000000
+      internalID: 7903711030756646471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_70
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a7d92be2e420a10800000000000000
+      internalID: 1874146357411674695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_71
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d436676d4bb5d20800000000000000
+      internalID: 3268404787789647194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_72
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5982384c6dca306e0800000000000000
+      internalID: -1872462981636085611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4317f973a537a120800000000000000
+      internalID: 2424965900604478284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_74
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68da28f29328e30800000000000000
+      internalID: 4504225453542573770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_75
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41685284087e3cef0800000000000000
+      internalID: -88973029465029100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_77
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3888af35af69f310800000000000000
+      internalID: 1439304311449880637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_78
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e642fbe21baafd0800000000000000
+      internalID: -2329855042877362686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_79
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f12f5a11a503620800000000000000
+      internalID: 2751798404168425374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_80
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d9bb9a73baf31a0800000000000000
+      internalID: -6827550254511186554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_81
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b29f968973b4ac0800000000000000
+      internalID: -3869938327042315514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_82
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20da2ae85462fc20800000000000000
+      internalID: 3238761415081381931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_83
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ada7ceb9b7416210800000000000000
+      internalID: 1324418628518915490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_84
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b841d379ab501c0800000000000000
+      internalID: -4538015890778322124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_85
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 12
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3ef55c3ea5f82b0800000000000000
+      internalID: -5580141478973283345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9ef1cf9569621a0800000000000000
+      internalID: -6834610071261943329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf9ef278a4125410800000000000000
+      internalID: 1464255542565183419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_87
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9af619a18faba9d0800000000000000
+      internalID: -2761920975039169890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_88
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ce9654509aef4b0800000000000000
+      internalID: -5404696662693516180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db63cca5b8f02e490800000000000000
+      internalID: -7718589720161405251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_89
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6c188b9c4a6bba0800000000000000
+      internalID: -6073485861171640615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animated gems_90
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 215
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c33e6f675e102e10800000000000000
+      internalID: 2170768381273060290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
