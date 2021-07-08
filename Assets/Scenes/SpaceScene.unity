@@ -656,7 +656,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &237395845
 Transform:
   m_ObjectHideFlags: 0
@@ -685,12 +685,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 8054932824311935794, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
-  - {fileID: 2511457588811772168, guid: 0eca1f9fc7c6bc145b6c0e6fac0cd0e7, type: 3}
-  - {fileID: 2511457588811772168, guid: 774585ef43030e540b1a7a7e38fbd871, type: 3}
-  - {fileID: 2511457588811772168, guid: 47186857ca47ded46bf3ef9d2843717c, type: 3}
-  - {fileID: 2511457588811772168, guid: 16b3a052dcda8b94fa40fb2c47648aef, type: 3}
-  timeBetweenSpawns: 1.2
-  spawnedEnemiesMax: 5
+  - {fileID: 8054932824311935794, guid: d77f807a08162fa4789db36487850e71, type: 3}
+  - {fileID: 8054932824311935794, guid: d990d04afd734f74d9666e0be4d598f0, type: 3}
+  - {fileID: 8054932824311935794, guid: a72381d604737804ea7cc7d182f0c2f2, type: 3}
+  - {fileID: 8054932824311935794, guid: 95535f97445edc24aa15d9869ecd3b3a, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnedEnemiesMax: 10
   isSpawnActive: 0
 --- !u!1 &285802577
 GameObject:
@@ -839,6 +839,24 @@ Transform:
   m_Father: {fileID: 428349051}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &339059002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2718545470231262888, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
+  m_PrefabInstance: {fileID: 1482056010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &339059004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339059002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1 &356955715
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +917,7 @@ GameObject:
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &420909009
 Transform:
   m_ObjectHideFlags: 0
@@ -908,7 +926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420909008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 3.5, z: 0}
+  m_LocalPosition: {x: -4, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1185202699}
@@ -921,7 +939,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420909008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c10b899d7a32b3047855fb3e9e1573b8, type: 3}
   m_Name: 
@@ -1028,7 +1046,6 @@ GameObject:
   - component: {fileID: 428349055}
   - component: {fileID: 428349056}
   - component: {fileID: 428349052}
-  - component: {fileID: 428349058}
   - component: {fileID: 428349050}
   m_Layer: 7
   m_Name: Player
@@ -1243,7 +1260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 428349049}
-  canvasStick: {fileID: 0}
+  canvasStick: {fileID: 934612990}
   joystickMobile: {fileID: 285802579}
   xLeftLimit: -2.1
   xRightLimit: 2.1
@@ -1277,21 +1294,8 @@ MonoBehaviour:
   playerSprite: {fileID: 0}
   speed: 0
   level: 0
-  health: 0
   amountCannons: 0
   fireRate: 0
---- !u!114 &428349058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428349047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acfd632d113ac4b47abc89b8ff9cca51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &437621279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8054932824311935793, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
@@ -1391,6 +1395,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8054932824311935793, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
   m_PrefabInstance: {fileID: 1880225911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &463127433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3711351652496575271, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
+  m_PrefabInstance: {fileID: 1482056010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &463127435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463127433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,12 +1635,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 8054932824311935794, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
-  - {fileID: 2511457588811772168, guid: 0eca1f9fc7c6bc145b6c0e6fac0cd0e7, type: 3}
-  - {fileID: 2511457588811772168, guid: 774585ef43030e540b1a7a7e38fbd871, type: 3}
-  - {fileID: 2511457588811772168, guid: 47186857ca47ded46bf3ef9d2843717c, type: 3}
-  - {fileID: 2511457588811772168, guid: 16b3a052dcda8b94fa40fb2c47648aef, type: 3}
-  timeBetweenSpawns: 1.2
-  spawnedEnemiesMax: 4
+  - {fileID: 8054932824311935794, guid: d77f807a08162fa4789db36487850e71, type: 3}
+  - {fileID: 8054932824311935794, guid: d990d04afd734f74d9666e0be4d598f0, type: 3}
+  - {fileID: 8054932824311935794, guid: a72381d604737804ea7cc7d182f0c2f2, type: 3}
+  - {fileID: 8054932824311935794, guid: 95535f97445edc24aa15d9869ecd3b3a, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnedEnemiesMax: 10
   isSpawnActive: 0
 --- !u!1 &600020785
 GameObject:
@@ -1879,7 +1901,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &799253357
 Transform:
   m_ObjectHideFlags: 0
@@ -1908,12 +1930,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 8054932824311935794, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
-  - {fileID: 2511457588811772168, guid: 0eca1f9fc7c6bc145b6c0e6fac0cd0e7, type: 3}
-  - {fileID: 2511457588811772168, guid: 774585ef43030e540b1a7a7e38fbd871, type: 3}
-  - {fileID: 2511457588811772168, guid: 47186857ca47ded46bf3ef9d2843717c, type: 3}
-  - {fileID: 2511457588811772168, guid: 16b3a052dcda8b94fa40fb2c47648aef, type: 3}
-  timeBetweenSpawns: 1.2
-  spawnedEnemiesMax: 3
+  - {fileID: 8054932824311935794, guid: d77f807a08162fa4789db36487850e71, type: 3}
+  - {fileID: 8054932824311935794, guid: d990d04afd734f74d9666e0be4d598f0, type: 3}
+  - {fileID: 8054932824311935794, guid: a72381d604737804ea7cc7d182f0c2f2, type: 3}
+  - {fileID: 8054932824311935794, guid: 95535f97445edc24aa15d9869ecd3b3a, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnedEnemiesMax: 10
   isSpawnActive: 0
 --- !u!1 &802631905
 GameObject:
@@ -2465,6 +2487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToPool: {fileID: 7664378357076789423, guid: 673186f39927baf46b3867598d526db8, type: 3}
   objectPoolAmount: 200
+  enmObjectToPool: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
+  enmObjectPoolAmount: 100
 --- !u!4 &989437416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8054932824311935793, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
@@ -2859,6 +2883,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8054932824311935793, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
   m_PrefabInstance: {fileID: 1137299071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1039262727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 874784166910654538, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
+  m_PrefabInstance: {fileID: 1482056010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1039262729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039262727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1001 &1097469888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3042,6 +3084,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 4199973354957099810, guid: 53f10f5bfb8740c439422ae5da7f78ed, type: 3}
+  - {fileID: 4199973354957099810, guid: 53f10f5bfb8740c439422ae5da7f78ed, type: 3}
+  - {fileID: 4199973354957099810, guid: 53f10f5bfb8740c439422ae5da7f78ed, type: 3}
   - {fileID: 4199973354957099810, guid: ed751dd1ec359984a86209a6d9478b8a, type: 3}
   timeBetweenSpawns: 0.1
   spawnedEnemiesMax: 1
@@ -3151,7 +3195,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1141920537
 Transform:
   m_ObjectHideFlags: 0
@@ -3180,12 +3224,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 8054932824311935794, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
-  - {fileID: 2511457588811772168, guid: 0eca1f9fc7c6bc145b6c0e6fac0cd0e7, type: 3}
-  - {fileID: 2511457588811772168, guid: 774585ef43030e540b1a7a7e38fbd871, type: 3}
-  - {fileID: 2511457588811772168, guid: 47186857ca47ded46bf3ef9d2843717c, type: 3}
-  - {fileID: 2511457588811772168, guid: 16b3a052dcda8b94fa40fb2c47648aef, type: 3}
-  timeBetweenSpawns: 1.2
-  spawnedEnemiesMax: 5
+  - {fileID: 8054932824311935794, guid: d77f807a08162fa4789db36487850e71, type: 3}
+  - {fileID: 8054932824311935794, guid: d990d04afd734f74d9666e0be4d598f0, type: 3}
+  - {fileID: 8054932824311935794, guid: a72381d604737804ea7cc7d182f0c2f2, type: 3}
+  - {fileID: 8054932824311935794, guid: 95535f97445edc24aa15d9869ecd3b3a, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnedEnemiesMax: 10
   isSpawnActive: 0
 --- !u!1 &1159014812
 GameObject:
@@ -3399,7 +3443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221263603}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Test Reward Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5143,7 +5187,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1749689646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5158,12 +5202,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemy:
   - {fileID: 8054932824311935794, guid: 30b916f3cd31dbc41922cf75ebebe2e9, type: 3}
-  - {fileID: 2511457588811772168, guid: 0eca1f9fc7c6bc145b6c0e6fac0cd0e7, type: 3}
-  - {fileID: 2511457588811772168, guid: 774585ef43030e540b1a7a7e38fbd871, type: 3}
-  - {fileID: 2511457588811772168, guid: 47186857ca47ded46bf3ef9d2843717c, type: 3}
-  - {fileID: 2511457588811772168, guid: 16b3a052dcda8b94fa40fb2c47648aef, type: 3}
-  timeBetweenSpawns: 1.2
-  spawnedEnemiesMax: 3
+  - {fileID: 8054932824311935794, guid: d77f807a08162fa4789db36487850e71, type: 3}
+  - {fileID: 8054932824311935794, guid: d990d04afd734f74d9666e0be4d598f0, type: 3}
+  - {fileID: 8054932824311935794, guid: a72381d604737804ea7cc7d182f0c2f2, type: 3}
+  - {fileID: 8054932824311935794, guid: 95535f97445edc24aa15d9869ecd3b3a, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnedEnemiesMax: 10
   isSpawnActive: 0
 --- !u!4 &1749689647
 Transform:

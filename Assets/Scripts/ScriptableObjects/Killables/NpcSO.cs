@@ -9,7 +9,7 @@ public class NpcSO : ScriptableObject
     [Space]
     [Header("Ship Data ---")]
     public string npcName;
-    public int level, weight, damage;
+    public int level, weight, amountCannons, fireRate;
 
     [Space]
     [Header("Health --")]
