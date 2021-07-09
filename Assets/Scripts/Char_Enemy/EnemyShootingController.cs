@@ -3,32 +3,32 @@ using UnityEngine;
 
 public class EnemyShootingController : MonoBehaviour
 {
-    int fireRate;
-    int bulletCounter;
+    int mFireRate, mAmountCannons, bulletCounter;
+    NpcDataHandler npcData;
     Shooting[] cannons;
 
     private void Start()
     {
-        fireRate = GetComponent<NpcDataHandler>().fireRate;
-        cannons = GetComponent<CannonController>().cannons;
+        cannons = GetComponentsInChildren<Shooting>();
+        npcData = GetComponent<NpcDataHandler>();
+        mFireRate = npcData.fireRate;
+        mAmountCannons = npcData.amountCannons;
     }
 
     private void Update()
     {
         bulletCounter++;
-        if (bulletCounter % fireRate == 0)
+        if (bulletCounter % mFireRate == 0)
         {
             EnemyShoot();
         }
     }
 
-
     void EnemyShoot()
     {
-        for (int i = 0; i < cannons.Length; i++)
+        for (int i = 0; i < mAmountCannons; i++)
         {
-            if (cannons[i].gameObject.activeInHierarchy)
-                cannons[i].CreateEnemyProjectile();
+            cannons[i].CreateEnemyProjectile();
         }
     }
 }

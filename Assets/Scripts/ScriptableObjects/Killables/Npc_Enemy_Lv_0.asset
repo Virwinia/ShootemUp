@@ -17,7 +17,7 @@ MonoBehaviour:
   level: 0
   weight: 0
   amountCannons: 1
-  fireRate: 150
+  fireRate: 500
   health: 3
   score: 100
   chanceToLoot: 0.03

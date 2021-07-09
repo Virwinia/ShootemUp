@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7664378357076789418}
-  bulletVelocity: {x: 0, y: 8}
+  bulletVelocity: {x: 0, y: 5}
   damage: 1
 --- !u!1 &7664378357276278717
 GameObject:

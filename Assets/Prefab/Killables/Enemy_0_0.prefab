@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6346203026379576390}
+  - component: {fileID: 1039262729}
   m_Layer: 6
   m_Name: Cannon2
   m_TagString: Cannon
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 9084652542179442710}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039262729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874784166910654538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1 &2497758912779383171
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2696472372018963862}
+  - component: {fileID: 339059004}
   m_Layer: 6
   m_Name: Cannon1
   m_TagString: Cannon
@@ -198,6 +213,19 @@ Transform:
   m_Father: {fileID: 9084652542179442710}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &339059004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718545470231262888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1 &3711351652496575271
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2513689308963508349}
+  - component: {fileID: 463127435}
   m_Layer: 6
   m_Name: Cannon0
   m_TagString: Cannon
@@ -228,6 +257,19 @@ Transform:
   m_Father: {fileID: 9084652542179442710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463127435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3711351652496575271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df1adbce7072b545bfb952ec7059f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5396279308197210409, guid: 62c28900829cca34881c9ac0835f00d7, type: 3}
 --- !u!1 &6354023133066383821
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +650,7 @@ MonoBehaviour:
   fireRate: 0
   health: 0
   score: 0
+  amountCannons: 0
 --- !u!114 &8054932824311935798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,3 +750,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannons: []
+  activeCannons: 0

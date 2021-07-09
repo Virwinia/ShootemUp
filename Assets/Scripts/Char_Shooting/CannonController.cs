@@ -18,7 +18,7 @@ public class CannonController : MonoBehaviour
         else if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ENEMY))
         {
             cannons = GetComponentsInChildren<Shooting>();
-            activeCannons = GetComponent<NpcDataHandler>().amountCannons; print("deactivate " + this.gameObject.name + " cannon " + activeCannons);
+            activeCannons = GetComponent<NpcDataHandler>().amountCannons;
             DeactivateCannons(activeCannons);
         }
     }

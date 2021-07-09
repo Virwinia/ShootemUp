@@ -9,10 +9,11 @@ public class PlayerShootingController : MonoBehaviour
     int bulletCounter;
     Shooting[] cannons;
 
+
     private void Start()
     {
         fireRate = GetComponent<PlayerDataHandler>().fireRate;
-        cannons = GetComponent<CannonController>().cannons;
+        cannons = GetComponentsInChildren<Shooting>();
     }
 
     private void Update()
@@ -39,8 +40,7 @@ public class PlayerShootingController : MonoBehaviour
     {
         for (int i = 0; i < cannons.Length; i++)
         {
-            if (cannons[i].gameObject.activeInHierarchy)
-                cannons[i].CreateProjectile();
+            cannons[i].CreateProjectile();
         }
     }
 }

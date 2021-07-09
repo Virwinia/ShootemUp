@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: -4122403361326895116, guid: c6ea4004ac21f4a41add0760bb59d9b4, type: 3}
     - target: {fileID: 7664378357076789416, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: bulletVelocity.y
-      value: -8
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 7664378357076789419, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: m_RootOrder
