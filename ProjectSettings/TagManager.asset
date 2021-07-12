@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cannon
   - Jet
+  - PlayerMesh
   layers:
   - Default
   - TransparentFX

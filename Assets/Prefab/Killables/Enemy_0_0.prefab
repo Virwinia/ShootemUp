@@ -651,6 +651,8 @@ MonoBehaviour:
   health: 0
   score: 0
   amountCannons: 0
+  vfxDamage: {fileID: 0}
+  vfxDeath: {fileID: 0}
 --- !u!114 &8054932824311935798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e79249b412c5b4fa090309dfb12205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcSO: {fileID: 11400000, guid: 62d378f4d9b7ace429180c9a43e9b644, type: 2}
   looter: {fileID: 3019997045559848309}
   enemyHP: 0
   score: 0
@@ -750,4 +751,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannons: []
-  activeCannons: 0

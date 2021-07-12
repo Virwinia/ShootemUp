@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4199973354957099837}
   - component: {fileID: 4199973354957099833}
   - component: {fileID: 4199973354957099838}
+  - component: {fileID: 9190202760769928245}
   - component: {fileID: 4199973354957099836}
   - component: {fileID: 4199973354957099839}
   - component: {fileID: 4199973354957099832}
@@ -75,6 +76,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
+--- !u!114 &9190202760769928245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199973354957099810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9338837afbd4908488722e977a772986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcData: {fileID: 11400000, guid: eb5373f37265a7446adcc5ba16c17713, type: 2}
+  chanceToLoot: 0
+  fireRate: 0
+  health: 0
+  score: 0
+  amountCannons: 0
+  vfxDamage: {fileID: 0}
+  vfxDeath: {fileID: 0}
 --- !u!114 &4199973354957099836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e79249b412c5b4fa090309dfb12205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcSO: {fileID: 11400000, guid: eb5373f37265a7446adcc5ba16c17713, type: 2}
   looter: {fileID: 4199973354957099832}
   enemyHP: 0
   score: 0

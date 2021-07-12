@@ -19,10 +19,10 @@ MonoBehaviour:
   amountCannons: 1
   fireRate: 500
   health: 3
-  score: 100
+  score: 50
   chanceToLoot: 0.03
   speed: 0
   amplitude: 0
   alphaDelta: 0
   prefabExplosionDamage: {fileID: 7597640974356340166, guid: 281f134289539be46ab3595e59b20347, type: 3}
-  prefabExplosionDeath: {fileID: 6986801532942665183, guid: f61e88a4f96f4eb4fac7077449cc099b, type: 3}
+  prefabExplosionDeath: {fileID: 5433452093844494329, guid: d092db2b4c6331a43bf1ae25aa8c8c17, type: 3}

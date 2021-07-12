@@ -29,14 +29,18 @@ public class SpawnManager : MonoBehaviour
 
     public void ActivateSpawner()
     {
-        StartCoroutine(ActivateSpawnerCoroutine());
+        if (gameObject.activeInHierarchy)
+        {
+            StartCoroutine(ActivateSpawnerCoroutine());
+        }
     }
 
     IEnumerator ActivateSpawnerCoroutine()
     {
         yield return new WaitForSeconds(timeBetweenWave);
         int temp = Random.Range(0, spawners.Length);
-        // spawners[temp].gameObject.SetActive(true);
+        spawners[temp].gameObject.SetActive(true);
+
         if (!spawners[temp].isSpawnActive)
         {
             spawners[temp].ActiveSpawner();

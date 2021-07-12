@@ -11,4 +11,11 @@ public static class StaticValues
     // AXIS
     public const string AXIS_VERTICAL = "Vertical";
     public const string AXIS_HORIZONTAL = "Horizontal";
+
+    // GAME DATA
+    public const string SCOREDATA_KEY = "ShootemUp_ScoreMax";
+
+    // SCENES
+    public const string SCENE_MAINMENU = "MainMenu";
+    public const string SCENE_GAME = "SpaceScene";
 }

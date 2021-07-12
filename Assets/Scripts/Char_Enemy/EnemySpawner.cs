@@ -25,26 +25,26 @@ public class EnemySpawner : MonoBehaviour
 
     void CreateEnemy()
     {
-        // if (gameObject.activeInHierarchy)
-        // {
-        if (isSpawnActive)
+        if (gameObject.activeInHierarchy)
         {
-            GameObject enemy = Instantiate(prefabEnemy[Random.Range(0, prefabEnemy.Length)], transform.position, Quaternion.identity);
-            enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move into a go as children.
-                                                                    //NOTA--> ASIGNAR PATH A ENEMIGO
-            spawnedEnemies++;
-
-
-            if (spawnedEnemies >= spawnedEnemiesMax)
+            if (isSpawnActive)
             {
-                isSpawnActive = false;
-                spawnedEnemies = 0;
-                // this.gameObject.SetActive(false);
-                SpawnManager.spawnManager.ActivateSpawner();
-            }
+                GameObject enemy = Instantiate(prefabEnemy[Random.Range(0, prefabEnemy.Length)], transform.position, Quaternion.identity);
+                enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move into a go as children.
+                                                                        //NOTA--> ASIGNAR PATH A ENEMIGO
+                spawnedEnemies++;
 
+
+                if (spawnedEnemies >= spawnedEnemiesMax)
+                {
+                    isSpawnActive = false;
+                    spawnedEnemies = 0;
+                    // this.gameObject.SetActive(false);
+                    SpawnManager.spawnManager.ActivateSpawner();
+                }
+
+            }
         }
-        // }
     }
 
     public void ActiveSpawner()

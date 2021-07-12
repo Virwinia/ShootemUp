@@ -4,12 +4,14 @@ using UnityEngine;
 public class EnemyShootingController : MonoBehaviour
 {
     int mFireRate, mAmountCannons, bulletCounter;
-    NpcDataHandler npcData;
-    Shooting[] cannons;
+    [ReadOnly] [SerializeField] NpcDataHandler npcData;
+    // [ReadOnly] [SerializeField] Shooting[] cannons;
+    [ReadOnly] [SerializeField] CannonController cannonController;
 
     private void Start()
     {
-        cannons = GetComponentsInChildren<Shooting>();
+        cannonController = GetComponent<CannonController>();
+        // cannons = GetComponentsInChildren<Shooting>();
         npcData = GetComponent<NpcDataHandler>();
         mFireRate = npcData.fireRate;
         mAmountCannons = npcData.amountCannons;
@@ -26,9 +28,10 @@ public class EnemyShootingController : MonoBehaviour
 
     void EnemyShoot()
     {
-        for (int i = 0; i < mAmountCannons; i++)
-        {
-            cannons[i].CreateEnemyProjectile();
-        }
+        if (cannonController != null)
+            for (int i = 0; i < mAmountCannons; i++)
+            {
+                cannonController.cannons[i].CreateEnemyProjectile();
+            }
     }
 }

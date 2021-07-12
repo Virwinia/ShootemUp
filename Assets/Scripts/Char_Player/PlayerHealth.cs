@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int enemyLayer;
-
-    [SerializeField] GameObject explosion;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == enemyLayer)
+        if (collision.gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ENEMY) ||
+       collision.gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ROCK))
         {
-            //LLamar GameManager
-            Instantiate(explosion, transform.position, Quaternion.identity);
-            // SoundFXManager.soundFXManagerInstance.PlaySound(1);
+            GameManager.gameManagerInstance.RemovePlayerHealth();
+
+            AudioManager.audioManagerInstance.PlaySound(0);
+
+            GameObject playerDeath = GetComponent<PlayerDataHandler>().vfxDeath;
+            Instantiate(playerDeath, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

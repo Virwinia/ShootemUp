@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
     [Space] [SerializeField] Vector3 coinVelocity;
 
     [Space] [ReadOnly] [SerializeField] int score;
-    public Vector2 position;
+    Vector2 position;
 
 
     private void Awake()
@@ -36,7 +36,7 @@ public class Coin : MonoBehaviour
 
     void CoinDeath()
     {
-        // SoundFXManager.soundFXManagerInstance.PlaySound(2);
+        AudioManager.audioManagerInstance.PlaySound(3);
         Destroy(gameObject);
     }
 }

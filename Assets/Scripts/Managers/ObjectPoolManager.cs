@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPoolManager : MonoBehaviour
 {
-    public static ObjectPoolManager ObjectPoolInstance = null;
+    public static ObjectPoolManager ObjectPoolInstance;
 
     [Space]
     [Header("Player Projectile ---")]
@@ -22,8 +22,7 @@ public class ObjectPoolManager : MonoBehaviour
 
     private void Awake()
     {
-        if (ObjectPoolInstance == null) ObjectPoolInstance = this;
-        else if (ObjectPoolInstance != this) Destroy(gameObject);
+        ObjectPoolInstance = this;
     }
 
     private void Start()

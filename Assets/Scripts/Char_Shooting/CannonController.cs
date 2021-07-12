@@ -17,7 +17,10 @@ public class CannonController : MonoBehaviour
         }
         else if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ENEMY))
         {
-            cannons = GetComponentsInChildren<Shooting>();
+            if (cannons != null)
+                cannons = GetComponentsInChildren<Shooting>();
+            else Debug.LogWarning("Missing Shooting component in children cannons");
+
             activeCannons = GetComponent<NpcDataHandler>().amountCannons;
             DeactivateCannons(activeCannons);
         }
@@ -26,7 +29,9 @@ public class CannonController : MonoBehaviour
     void DeactivateCannons(int activeCannons)
     {
         for (int i = activeCannons; i < cannons.Length; i++)
+        {
             cannons[i].gameObject.SetActive(false);
+        }
     }
 
 

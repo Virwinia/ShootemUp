@@ -16,13 +16,13 @@ MonoBehaviour:
   npcName: npc_meteor_0
   level: 0
   weight: 0
-  damage: 0
-  prefabNpc: {fileID: 4199973354957099810, guid: 53f10f5bfb8740c439422ae5da7f78ed, type: 3}
+  amountCannons: 0
+  fireRate: 0
   health: 3
   score: 100
   chanceToLoot: 0
-  speed: 0
-  amplitude: 0
-  alphaDelta: 0
+  speed: 40
+  amplitude: 0.1
+  alphaDelta: 0.005
   prefabExplosionDamage: {fileID: 7597640974356340166, guid: 281f134289539be46ab3595e59b20347, type: 3}
-  prefabExplosionDeath: {fileID: 7208627865260691666, guid: 7375b0541e237bf48b53dd368ddba8d1, type: 3}
+  prefabExplosionDeath: {fileID: 5433452093844494329, guid: 89bc9fd712c605e4b8667233ed424974, type: 3}

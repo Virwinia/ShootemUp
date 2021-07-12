@@ -7,12 +7,16 @@ public class PlayerShootingController : MonoBehaviour
     bool isAutomatic = true;
     int fireRate;
     int bulletCounter;
+    int activeCannons;
     Shooting[] cannons;
 
 
     private void Start()
     {
-        fireRate = GetComponent<PlayerDataHandler>().fireRate;
+        PlayerDataHandler playerData = GetComponent<PlayerDataHandler>();
+        fireRate = playerData.fireRate;
+        activeCannons = playerData.amountCannons;
+
         cannons = GetComponentsInChildren<Shooting>();
     }
 
@@ -38,9 +42,8 @@ public class PlayerShootingController : MonoBehaviour
 
     void Shoot()
     {
-        for (int i = 0; i < cannons.Length; i++)
-        {
+        for (int i = 0; i < activeCannons; i++)
             cannons[i].CreateProjectile();
-        }
+
     }
 }

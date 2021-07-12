@@ -3,18 +3,19 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField] NpcSO npcSO;
     [SerializeField] GiveRandomLoot looter;
 
     [ReadOnly] [SerializeField] int enemyHP, score;
     GameObject explosionDamage, explosionDeath;
+    NpcDataHandler enemyData;
 
     private void Start()
     {
-        enemyHP = npcSO.health;
-        score = npcSO.score;
-        explosionDamage = npcSO.prefabExplosionDamage;
-        explosionDeath = npcSO.prefabExplosionDeath;
+        enemyData = GetComponent<NpcDataHandler>();
+        enemyHP = enemyData.health;
+        score = enemyData.score;
+        explosionDamage = enemyData.vfxDamage;
+        explosionDeath = enemyData.vfxDeath;
     }
 
     public void TakeDamage(int damage)

@@ -21,10 +21,11 @@ public class NpcSO : ScriptableObject
     [Header("Movement --")]
     public float speed;
     public float amplitude, alphaDelta; // ---> NOTA A FUTURO: INTENTAR SIMPLIFICAR ESTOS DATOS
+                                        // CREAR SISTEMA DE PATHS - NO DOTWEEN
 
     [Space]
     [Header("Particles --")]
-    public GameObject prefabExplosionDamage; // --> NOTA A FUTURO: ESTO DEBERÍA DARLO LA BALA
+    public GameObject prefabExplosionDamage; // --> NOTA A FUTURO: ESTO DEBERÍA DARLO LA BALA?
     public GameObject prefabExplosionDeath;
 
 
