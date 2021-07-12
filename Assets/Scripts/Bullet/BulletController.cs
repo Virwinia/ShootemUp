@@ -18,8 +18,8 @@ public class BulletController : MonoBehaviour
     {
         if (other.gameObject.GetComponent<IDamageable>() != null)
         {
-            other.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
-            other.gameObject.GetComponent<EnemyHealth>().PositionEffectsInHit(transform.position);
+            other.gameObject.GetComponent<IDamageable>().TakeDamage(damage, transform.position.x, transform.position.y);
+            // other.gameObject.GetComponent<EnemyHealth>().PositionEffectsInHit(transform.position);
             this.gameObject.SetActive(false);
         }
     }

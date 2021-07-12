@@ -13,6 +13,7 @@ public class NpcSO : ScriptableObject
 
     [Space]
     [Header("Health --")]
+    [Tooltip("Amount of lifes the player has.")]
     public int health;
     public int score;
     public float chanceToLoot;

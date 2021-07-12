@@ -4,14 +4,14 @@ using UnityEngine;
 public class EnemyShootingController : MonoBehaviour
 {
     int mFireRate, mAmountCannons, bulletCounter;
-    [ReadOnly] [SerializeField] NpcDataHandler npcData;
-    // [ReadOnly] [SerializeField] Shooting[] cannons;
-    [ReadOnly] [SerializeField] CannonController cannonController;
+    NpcDataHandler npcData;
+    CannonController cannonController;
+    // [ReadOnly] [SerializeField] Shooting[] cannons; //----> I think cannonController is better option - Test
 
     private void Start()
     {
-        cannonController = GetComponent<CannonController>();
         // cannons = GetComponentsInChildren<Shooting>();
+        cannonController = GetComponent<CannonController>();
         npcData = GetComponent<NpcDataHandler>();
         mFireRate = npcData.fireRate;
         mAmountCannons = npcData.amountCannons;

@@ -3,36 +3,41 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField] GiveRandomLoot looter;
+    GiveRandomLoot looter;
 
-    [ReadOnly] [SerializeField] int enemyHP, score;
+    int enemyHP, score;
     GameObject explosionDamage, explosionDeath;
     NpcDataHandler enemyData;
 
     private void Start()
     {
+        looter = GetComponent<GiveRandomLoot>();
         enemyData = GetComponent<NpcDataHandler>();
+        SetEnemyData();
+    }
+
+    void SetEnemyData()
+    {
         enemyHP = enemyData.health;
         score = enemyData.score;
         explosionDamage = enemyData.vfxDamage;
         explosionDeath = enemyData.vfxDeath;
     }
 
-    public void TakeDamage(int damage)
-    {
-        enemyHP -= damage;
-
-        if (enemyHP <= 0)
-        {
-            EnemyDeath();
-        }
-    }
-
-    public void PositionEffectsInHit(Vector3 hitPosition)
+    void PositionEffectsInHit(float x, float y)
     {
         if (explosionDamage != null)
-            Instantiate(explosionDamage, hitPosition, Quaternion.identity);//instanciar explosion en el punto en el que entra el daño
+            Instantiate(explosionDamage, new Vector2(x, y), Quaternion.identity);
         else Debug.LogWarning("Missing prefab reference explosionDamage in " + gameObject.name);
+    }
+
+    public void TakeDamage(int damage, float x, float y)
+    {
+        PositionEffectsInHit(x, y); // When the enemy takes damage, particles are created in such position,
+
+        enemyHP -= damage;          // Bullet inflicts damage to enemyHealth,
+        if (enemyHP <= 0)           // and enemy dies if health reaches to zero.
+            EnemyDeath();
     }
 
     void EnemyDeath()
@@ -43,7 +48,6 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
         AudioManager.audioManagerInstance.PlaySound(0);
         Destroy(gameObject);
-
         GiveScoreAndLoot();
     }
 

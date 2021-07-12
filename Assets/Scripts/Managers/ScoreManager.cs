@@ -9,9 +9,9 @@ public class ScoreManager : MonoBehaviour
 
     [Space]
     [Header("Player Score ---")]
+    [SerializeField] ScoreSaveData ScoreData;    // This class contains the score data.
     [ReadOnly] [SerializeField] int playerScore;
-    [SerializeField] ScoreSaveData scoreSaveData;
-
+    PlayerDataHandler playerData;
 
     [Space]
     [Header("UI ---")]
@@ -21,62 +21,57 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         scoreManager = this;
-        playerScore = GameManager.gameManagerInstance.playerSO.score;
     }
 
     private void Start()
     {
+        playerData = GameManager.gameManagerInstance.playerData;
+        playerScore = playerData.score;
         LoadDataFromPlayerPrefs();
-        scoreRecordText.text = "Record: " + playerScore;
+        scoreRecordText.text = "Record: " + ScoreData.scoreMax;
+        scoreText.text = "Score: " + playerScore.ToString();
     }
 
-    public void AddScore(int n)
+    public void AddScore(int n) //---> FUTURE ME: pasar a interfaz??
     {
         playerScore += n;
         scoreText.text = "Score: " + playerScore.ToString();
     }
 
-    // SAVE/LOAD DATA - GameManager needs to read PlayerPrefs
+    //------------------
+    // SAVE/LOAD DATA - Checker
     public bool PlayerHasDataSaved()
     {
-
         bool hasData = PlayerPrefs.HasKey(StaticValues.SCOREDATA_KEY);   // This key is unique and CAN'T BE CHANGED, or all the saved data will lose.
                                                                          // I can create other keys to save different data:
                                                                          // ShootemUp_PlayerData, ShootemUp_WorldData... etc
-
         return hasData;
-
     }
 
+    // LOAD DATA
     public void LoadDataFromPlayerPrefs()
     {
-        if (!PlayerHasDataSaved())                  // If there is not some saved data...
-            scoreSaveData = new ScoreSaveData();    // create new data,
-        else                                        // else, you can use the saved ones.
+        if (!PlayerHasDataSaved())              // If there is not some saved data...
+            ScoreData = new ScoreSaveData();    // create new data,
+        else                                    // else, you can use the saved ones.
         {
             string jsonDataScoreMax = PlayerPrefs.GetString(StaticValues.SCOREDATA_KEY);
-            scoreSaveData = JsonUtility.FromJson<ScoreSaveData>(jsonDataScoreMax);
-            Debug.Log("LoadPlayerScoreRecord HAS NEW DATA: " + jsonDataScoreMax);
-            LoadPlayerScoreRecord();                // Load ScoreMax data.
+            ScoreData = JsonUtility.FromJson<ScoreSaveData>(jsonDataScoreMax);
+            Debug.Log("Load MaxScore Saved HAS NEW DATA: " + jsonDataScoreMax);
         }
     }
 
+    // SAVE DATA
     public void SaveDataInPlayerPrefs() //---> THIS MUST BE CALLED WHEN GAME IS OVER
     {
-        SavePlayerScoreRecord();
-        string jsonDataScoreMax = JsonUtility.ToJson(scoreSaveData, true);
+        if (playerScore > ScoreData.scoreMax)     // If current Player's score is higher than records,
+            ScoreData.scoreMax = playerScore;    // save that info.
+
+        string jsonDataScoreMax = JsonUtility.ToJson(ScoreData, true);
         PlayerPrefs.SetString(StaticValues.SCOREDATA_KEY, jsonDataScoreMax);
+        Debug.Log("Your score is " + playerScore + " and MaxScore HAS NEW DATA: " + jsonDataScoreMax);
     }
+    //------------------
 
-    void LoadPlayerScoreRecord()   // SaveData updates according to the local values (Save)
-    {
-        playerScore = scoreSaveData.scoreMax;
-    }
-
-    void SavePlayerScoreRecord()
-    {
-        if (playerScore > scoreSaveData.scoreMax)     // If current Player's score is higher than records,
-            scoreSaveData.scoreMax = playerScore;    // save that info.
-    }
 
 }
