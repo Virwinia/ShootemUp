@@ -16,10 +16,16 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag(StaticValues.TAG_PLAYER))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().PlayerDeath();
+            this.gameObject.SetActive(false);
+        }
+
+
         if (other.gameObject.GetComponent<IDamageable>() != null)
         {
             other.gameObject.GetComponent<IDamageable>().TakeDamage(damage, transform.position.x, transform.position.y);
-            // other.gameObject.GetComponent<EnemyHealth>().PositionEffectsInHit(transform.position);
             this.gameObject.SetActive(false);
         }
     }

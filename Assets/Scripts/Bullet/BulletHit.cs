@@ -5,7 +5,7 @@
 
 using UnityEngine;
 
-public class ObjectKiller : MonoBehaviour
+public class BulletHit : MonoBehaviour
 {
     public void Death()
     {
