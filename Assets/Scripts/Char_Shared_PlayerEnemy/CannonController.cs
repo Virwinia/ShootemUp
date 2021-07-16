@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CannonController : MonoBehaviour
 {
-    public Shooting[] cannons;
+    [ReadOnly] public Shooting[] cannons;
     int activeCannons;
     bool isPlayer, isEnemy;
 

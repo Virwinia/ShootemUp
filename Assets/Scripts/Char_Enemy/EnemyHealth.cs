@@ -33,11 +33,12 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage, float x, float y)
     {
-        PositionEffectsInHit(x, y); // When the enemy takes damage, particles are created in such position,
+        PositionEffectsInHit(x, y);     // When the enemy takes damage, particles are created in such position,
+        enemyHP -= damage;              // Bullet inflicts damage to enemyHealth,
+        if (enemyHP <= 0) EnemyDeath(); // and enemy dies if health reaches to zero.
 
-        enemyHP -= damage;          // Bullet inflicts damage to enemyHealth,
-        if (enemyHP <= 0)           // and enemy dies if health reaches to zero.
-            EnemyDeath();
+
+
     }
 
     void EnemyDeath()
@@ -47,6 +48,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         else Debug.LogWarning("Missing prefab reference explosionDeath in " + gameObject.name);
 
         AudioManager.audioManagerInstance.PlaySound(0);
+
         Destroy(gameObject);
         GiveScoreAndLoot();
     }

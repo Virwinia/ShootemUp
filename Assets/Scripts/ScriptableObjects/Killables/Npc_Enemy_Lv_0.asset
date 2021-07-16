@@ -14,15 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   npcName: npc_enemy_lv_0
-  level: 0
-  weight: 0
   amountCannons: 1
   fireRate: 500
-  health: 3
-  score: 50
+  health: 1
+  score: 100
   chanceToLoot: 0.03
   speed: 0
   amplitude: 0
   alphaDelta: 0
-  prefabExplosionDamage: {fileID: 7597640974356340166, guid: 281f134289539be46ab3595e59b20347, type: 3}
-  prefabExplosionDeath: {fileID: 5433452093844494329, guid: d092db2b4c6331a43bf1ae25aa8c8c17, type: 3}
+  prefabExplosionDamage: {fileID: 7530738712486072372, guid: c19723c6e1aa3d24ebf9c1cf073a6b94, type: 3}
+  prefabExplosionDeath: {fileID: 8862202396140944993, guid: b085a3f8d4150c64ea033edd0c41b1e5, type: 3}

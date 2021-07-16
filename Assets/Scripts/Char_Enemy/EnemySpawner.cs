@@ -11,44 +11,38 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject[] prefabEnemy;
+    [Space] [SerializeField] GameObject[] prefabEnemy;
+    [Space] [SerializeField] float spawnTime = 2;
+    public int enemiesPerSpawn = 3;
+    public int spawnedEnemies;
+    bool canSpawn;
 
-    [Space] [SerializeField] float timeBetweenSpawns;
-    [SerializeField] int spawnedEnemiesMax;
-    [HideInInspector] public bool isSpawnActive;
-    int spawnedEnemies;
-
-    private void OnEnable()
+    public void SpawningProcess()
     {
-        InvokeRepeating("CreateEnemy", 0, timeBetweenSpawns);
+        InvokeRepeating("CreateEnemy", 0, spawnTime);
+    }
+
+    public void CancelSpawningProcess()
+    {
+        CancelInvoke();
     }
 
     void CreateEnemy()
     {
-        if (gameObject.activeInHierarchy)
+        if (SpawnManager.spawnManager.CanSpawn())
         {
-            if (isSpawnActive)
+            GameObject enemy = Instantiate(prefabEnemy[Random.Range(0, prefabEnemy.Length)], transform.position, Quaternion.identity);
+            enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move into a go as children.
+                                                                    //NOTA--> ASIGNAR PATH A ENEMIGO
+            spawnedEnemies++;
+            SpawnManager.spawnManager.AddEnemyToCounter();
+
+            if (spawnedEnemies == enemiesPerSpawn)
             {
-                GameObject enemy = Instantiate(prefabEnemy[Random.Range(0, prefabEnemy.Length)], transform.position, Quaternion.identity);
-                enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move into a go as children.
-                                                                        //NOTA--> ASIGNAR PATH A ENEMIGO
-                spawnedEnemies++;
-
-
-                if (spawnedEnemies >= spawnedEnemiesMax)
-                {
-                    isSpawnActive = false;
-                    spawnedEnemies = 0;
-                    // this.gameObject.SetActive(false);
-                    SpawnManager.spawnManager.ActivateSpawner();
-                }
-
+                CancelInvoke();
+                spawnedEnemies = 0;
+                SpawnManager.spawnManager.ActivateNextSpawner();
             }
         }
-    }
-
-    public void ActiveSpawner()
-    {
-        isSpawnActive = true;
     }
 }

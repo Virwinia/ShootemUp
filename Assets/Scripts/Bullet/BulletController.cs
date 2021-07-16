@@ -22,9 +22,10 @@ public class BulletController : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
-
-        if (other.gameObject.GetComponent<IDamageable>() != null)
+        if (other.gameObject.GetComponent<IDamageable>() != null
+        && this.gameObject.CompareTag(StaticValues.TAG_PLAYER))
         {
+            print("BULLET");
             other.gameObject.GetComponent<IDamageable>().TakeDamage(damage, transform.position.x, transform.position.y);
             this.gameObject.SetActive(false);
         }

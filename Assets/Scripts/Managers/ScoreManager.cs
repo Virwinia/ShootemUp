@@ -27,7 +27,9 @@ public class ScoreManager : MonoBehaviour
     {
         playerData = GameManager.gameManagerInstance.playerData;
         playerScore = playerData.score;
+
         LoadDataFromPlayerPrefs();
+
         scoreRecordText.text = "Record: " + ScoreData.scoreMax;
         scoreText.text = "Score: " + playerScore.ToString();
     }

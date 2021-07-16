@@ -20,5 +20,5 @@ MonoBehaviour:
   cannonAmount: 1
   fireRate: 100
   playerShip: {fileID: 21300000, guid: 22291e2d091ed26438e3963f5004acb4, type: 3}
-  prefabExplosionDeath: {fileID: 518939541780904101, guid: 35d8d69279fc68a47bc14d658ff455a3, type: 3}
+  prefabExplosionDeath: {fileID: 8862202396140944993, guid: b079058702be76d4ab6e316546a07ad1, type: 3}
   prefabPlayer: {fileID: 3960043735060194890, guid: 625146a326873b4488585a7f437164b7, type: 3}

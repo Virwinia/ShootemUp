@@ -1,19 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class ScrollParallax : MonoBehaviour
 {
+    [SerializeField] float parallaxVelocity;
     Renderer rend;
-
-    [SerializeField]
-    float parallaxVelocity;
-
-    [SerializeField]
-    bool isGameOver;
-
-    [SerializeField]
     float value;
+    bool isGameOver;
 
     private void Awake()
     {

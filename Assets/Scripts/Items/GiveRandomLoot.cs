@@ -15,10 +15,15 @@ public class GiveRandomLoot : MonoBehaviour
     [Space]
     [Header("Reward Coin ---")]
     [Tooltip("Coins to loot.")]
-    [SerializeField] CoinSO[] coins;
+    [SerializeField] ItemSO[] items;
     [Tooltip("The randomness will take values from a curve.")]
     [SerializeField] AnimationCurve bezierValue;
     float curveRandomness;
+
+    private void Start()
+    {
+        if (items.Length == 0) Debug.LogWarning("<b><color=blue>Items array is empty</color></b> in " + gameObject.name);
+    }
 
     public void CalculateLootingChances()
     {
@@ -43,27 +48,23 @@ public class GiveRandomLoot : MonoBehaviour
     void CalculateRandomInBezier()
     {
         curveRandomness = Mathf.Floor(bezierValue.Evaluate(Random.value) * 100);    // To give weight, we take a random a value from a curve.
-
     }
 
     void GetCoin()
     {
-        if (coins.Length == 0) return;
-        int nChance = (int)(100 / coins.Length);    // Distribute the weight between the items in the array.
+        if (items.Length == 0) return;
+        int nChance = (int)(100 / items.Length);    // Distribute the weight between the items in the array.
 
-        for (int i = 0; i < coins.Length; i++)
+        for (int i = 0; i < items.Length; i++)
         {
             if (curveRandomness > nChance * i && curveRandomness <= nChance * (i + 1))
-                CreateCoin(coins[i]);
+                CreateCoin(items[i]);
         }
     }
 
-    void CreateCoin(CoinSO obj)
+    void CreateCoin(ItemSO obj)
     {
-        if (obj != null)
-        {
-            Instantiate(obj.coinPrefab, this.transform.position, Quaternion.identity);
-        }
+        if (obj != null) Instantiate(obj.itemPrefab, this.transform.position, Quaternion.identity);
         else return;
     }
 

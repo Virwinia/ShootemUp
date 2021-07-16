@@ -6,44 +6,75 @@ public class SpawnManager : MonoBehaviour
 {
     public static SpawnManager spawnManager;
 
-    [SerializeField] EnemySpawner[] spawners;
+    public EnemySpawner[] spawners;
     [SerializeField] float timeBetweenWave, timeFirstWave;
 
-    // TO-DO
-    // [SerializeField] int amountOfWaves, enemiesPerWave;
-    // int currentWave, totalEnemiesInScene;
-    // Controlar waves con peso
-    // controlar número de naves/enemigos en escena para spawnear nuevos
+    [SerializeField] int enemiesInScene = 0;
+    [SerializeField] int enemiesPerWave = 5;
+    [SerializeField] int enemyCapacity;
+    bool canSpawn;
 
     private void Awake()
     {
         spawnManager = this;
         spawners = GetComponentsInChildren<EnemySpawner>();
+        if (spawners.Length == 0) Debug.Log("Array lenght is zero in gameobject " + gameObject.name);
+
+        enemyCapacity = enemiesPerWave;
     }
 
     IEnumerator Start()
     {
         yield return new WaitForSeconds(timeFirstWave);
-        ActivateSpawner();
+        StartCoroutine(ActivateSpawnerCoroutine());
     }
 
-    public void ActivateSpawner()
-    {
-        if (gameObject.activeInHierarchy)
-        {
-            StartCoroutine(ActivateSpawnerCoroutine());
-        }
-    }
-
-    IEnumerator ActivateSpawnerCoroutine()
+    IEnumerator ActivateSpawnerCoroutine()                      // Starting the game, 
     {
         yield return new WaitForSeconds(timeBetweenWave);
-        int temp = Random.Range(0, spawners.Length);
-        spawners[temp].gameObject.SetActive(true);
 
-        if (!spawners[temp].isSpawnActive)
-        {
-            spawners[temp].ActiveSpawner();
-        }
+        int activeSpawner = Random.Range(0, spawners.Length);   // manager chooses which spawner will work
+        spawners[activeSpawner].SpawningProcess();              // ...start spawning
+
     }
+
+    public void ActivateNextSpawner()
+    {
+        StartCoroutine(ActivateSpawnerCoroutine());
+    }
+
+    public void AddEnemyToCounter()
+    {
+        enemiesInScene++;
+    }
+
+    public void RemoveEnemyFromCounter()
+    {
+        enemiesInScene--;
+        // enemyCapacity = enemiesPerWave - enemiesInScene;
+        print("SPAWNMANAGER");
+    }
+
+    public int EnemiesThatCanBeSpawned(int mEnemiesPerSpawn)
+    {
+        // enemyCapacity = Mathf.Clamp(enemyCapacity, 0, enemiesPerWave);
+        // enemiesInScene = Mathf.Clamp(enemiesInScene, 0, enemiesPerWave);
+
+        if (enemyCapacity > 0)
+        {
+            if (enemyCapacity >= mEnemiesPerSpawn)
+                return mEnemiesPerSpawn;
+            else return enemyCapacity;
+        }
+        else return 0;
+    }
+
+    public bool CanSpawn()
+    {
+        enemyCapacity = enemiesPerWave - enemiesInScene;
+
+        canSpawn = enemyCapacity > 0 ? true : false;
+        return canSpawn;
+    }
+
 }

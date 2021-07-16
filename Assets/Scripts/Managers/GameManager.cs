@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [Space]
     [ReadOnly] public PlayerDataHandler playerData;
     [SerializeField] GameObject gameOverScreen; //FUTRE -- TODO in another script -script UI
-    [SerializeField] GameObject despawnObject;
+    // [SerializeField] GameObject spawnManager;
 
     int playerHealth;
     float respawnTime = 1;
@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
         playerData = obj.GetComponent<PlayerDataHandler>(); // Before starting the game, values are set according the given data in PlayerSO.
         player = playerData.objPlayer;
 
-        if (isNewGame)   // Set starting values.
-            playerHealth = playerData.health;
+        if (isNewGame) playerHealth = playerData.health;    // Set starting values.
     }
 
     public void RemovePlayerHealth()
@@ -43,16 +42,12 @@ public class GameManager : MonoBehaviour
         playerHealth--;
         if (playerHealth <= 0)
         {
-            if (gameOverScreen != null)
-                gameOverScreen.SetActive(true);
-
+            if (gameOverScreen != null) gameOverScreen.SetActive(true);
             ScoreManager.scoreManager.SaveDataInPlayerPrefs();
-            EnemySpawnerIsActive(false);
+
+            // SpawnManager.spawnManager.gameObject.SetActive(false);
         }
-        else
-        {
-            StartCoroutine(GenerateNewShip());
-        }
+        else { StartCoroutine(GenerateNewShip()); }
     }
 
     IEnumerator GenerateNewShip()
@@ -60,14 +55,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         Instantiate(playerData.objPlayer, respawnPosition, Quaternion.identity);
         SetPlayerData(false);
-        EnemySpawnerIsActive(true);
-    }
 
-    void EnemySpawnerIsActive(bool isActive)
-    {
-        despawnObject.SetActive(isActive);
-    }
+        // SpawnManager.spawnManager.gameObject.SetActive(true);
 
+
+
+    }
 
 
 
