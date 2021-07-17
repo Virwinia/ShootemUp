@@ -51,22 +51,6 @@ public class SpawnManager : MonoBehaviour
     public void RemoveEnemyFromCounter()
     {
         enemiesInScene--;
-        // enemyCapacity = enemiesPerWave - enemiesInScene;
-        print("SPAWNMANAGER");
-    }
-
-    public int EnemiesThatCanBeSpawned(int mEnemiesPerSpawn)
-    {
-        // enemyCapacity = Mathf.Clamp(enemyCapacity, 0, enemiesPerWave);
-        // enemiesInScene = Mathf.Clamp(enemiesInScene, 0, enemiesPerWave);
-
-        if (enemyCapacity > 0)
-        {
-            if (enemyCapacity >= mEnemiesPerSpawn)
-                return mEnemiesPerSpawn;
-            else return enemyCapacity;
-        }
-        else return 0;
     }
 
     public bool CanSpawn()

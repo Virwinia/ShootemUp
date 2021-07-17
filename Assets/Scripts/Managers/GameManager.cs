@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     [Space]
     [ReadOnly] public PlayerDataHandler playerData;
     [SerializeField] GameObject gameOverScreen; //FUTRE -- TODO in another script -script UI
-    // [SerializeField] GameObject spawnManager;
 
     int playerHealth;
     float respawnTime = 1;
@@ -44,8 +43,6 @@ public class GameManager : MonoBehaviour
         {
             if (gameOverScreen != null) gameOverScreen.SetActive(true);
             ScoreManager.scoreManager.SaveDataInPlayerPrefs();
-
-            // SpawnManager.spawnManager.gameObject.SetActive(false);
         }
         else { StartCoroutine(GenerateNewShip()); }
     }
@@ -55,11 +52,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         Instantiate(playerData.objPlayer, respawnPosition, Quaternion.identity);
         SetPlayerData(false);
-
-        // SpawnManager.spawnManager.gameObject.SetActive(true);
-
-
-
     }
 
 

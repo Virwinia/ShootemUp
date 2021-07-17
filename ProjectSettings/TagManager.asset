@@ -7,7 +7,9 @@ TagManager:
   - Cannon
   - Jet
   - PlayerMesh
-  - Background
+  - Shield
+  - TriggerBoundary
+  - Pickable
   layers:
   - Default
   - TransparentFX

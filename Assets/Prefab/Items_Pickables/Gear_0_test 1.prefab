@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1952644087148159409}
   - component: {fileID: 3588989659194813446}
   - component: {fileID: 4065541661179231244}
-  - component: {fileID: -4907500648108141930}
+  - component: {fileID: 7033900161703508647}
   m_Layer: 0
-  m_Name: Gem_0_Golden
-  m_TagString: Untagged
+  m_Name: Gear_0_test 1
+  m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4907500648108141930
+--- !u!114 &7033900161703508647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,13 +80,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4902957333519516584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d18d97451d485a43925d25f7ef5cf01, type: 3}
+  m_Script: {fileID: 11500000, guid: 277ba142d1bbda4498d6f81d8719527a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 09e81130f54d5b34a884659ab8532298, type: 2}
+  itemData: {fileID: 11400000, guid: 3e1810e2a8d8469419558daac8475672, type: 2}
   rb: {fileID: 4065541661179231244}
-  gravity: {x: 0, y: -1.5}
-  score: 0
+  gravity: {x: 0, y: -1}
+  anim: {fileID: 1553152958182190922, guid: 49e72ecea75772648bbc6a41f85418e8, type: 3}
 --- !u!1 &6246799743488954947
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +97,6 @@ GameObject:
   m_Component:
   - component: {fileID: 404938729035994874}
   - component: {fileID: 3866410648587343875}
-  - component: {fileID: 51004248535382066}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -114,7 +113,7 @@ Transform:
   m_GameObject: {fileID: 6246799743488954947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1952644087148159409}
   m_RootOrder: 0
@@ -159,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 371807228058381616, guid: ef7833144b8fa924e8c0da62ccc6fe93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da87007df140ff04987738c4371f69c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -170,22 +169,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &51004248535382066
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6246799743488954947}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6f29ebdf66fd97c4a8464ea135a7ff54, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
         if (SpawnManager.spawnManager.CanSpawn())
         {
             GameObject enemy = Instantiate(prefabEnemy[Random.Range(0, prefabEnemy.Length)], transform.position, Quaternion.identity);
-            enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move into a go as children.
+            enemy.transform.SetParent(this.gameObject.transform);   // To avoid have lot of gameobjects in Hierarchy, move enemies into a go as children.
                                                                     //NOTA--> ASIGNAR PATH A ENEMIGO
             spawnedEnemies++;
             SpawnManager.spawnManager.AddEnemyToCounter();
