@@ -3,23 +3,21 @@ using UnityEngine;
 
 public class PlayerDataHandler : MonoBehaviour
 {
+    public static PlayerDataHandler playerDataInstance;
+
     [SerializeField] PlayerSO playerData;
+    [SerializeField] public GameObject shield;
     [ReadOnly] public int health;
+
     [HideInInspector] public float speed;
-    [HideInInspector] public int level, score, amountCannons, fireRate;
+    [HideInInspector] public int score, amountCannons, fireRate;
     [HideInInspector] public GameObject vfxDeath;
     [HideInInspector] public GameObject objPlayer;
-    [Space] [SerializeField] public bool hasShield;
-    [SerializeField] public GameObject shield;
-
-    // [HideInInspector] public Sprite playerSprite;
-    // [HideInInspector] public int scoreMax; // FUTURE ME: INTENTA REFERENCIAR UN SCRIPTABLE OBJECT QUE SÓLO CONTENGA SCORE
-
+    [HideInInspector] public bool hasShield;
 
     private void Awake()
     {
-        // playerSprite = playerData.playerShip; --- not used
-        // level = playerData.level; --- not used
+        playerDataInstance = this;
 
         // PLAYER DATA
         score = playerData.Score;
@@ -35,6 +33,13 @@ public class PlayerDataHandler : MonoBehaviour
         hasShield = false;
         shield.SetActive(hasShield);
     }
+
+    public void ShieldActivation(bool isActivated)
+    {
+        shield.SetActive(isActivated);
+        hasShield = isActivated;
+    }
+
 
     // private void Update()
     // {
@@ -54,14 +59,6 @@ public class PlayerDataHandler : MonoBehaviour
     //         shield.SetActive(hasShield);
     //     }
     // }
-
-    public void ShieldActivation(bool isActivated)
-    {
-        shield.SetActive(isActivated);
-        hasShield = isActivated;
-    }
-
-
 
 
 }

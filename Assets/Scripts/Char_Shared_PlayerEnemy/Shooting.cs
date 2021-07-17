@@ -24,7 +24,7 @@ public class Shooting : MonoBehaviour
         obj.transform.position = gameObject.transform.position;
         obj.transform.rotation = gameObject.transform.rotation;
         obj.SetActive(true);
-        AudioManager.audioManagerInstance.PlaySound(2);
+        AudioManager.audioManagerInstance.PlaySound(1);
     }
 
 }

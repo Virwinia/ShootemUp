@@ -10,6 +10,7 @@ public class APickPowerUp : AbstractPickItem
 {
     int id;
     PlayerDataHandler playerData;
+    bool isPicked;
 
     private void Start()
     {
@@ -27,8 +28,7 @@ public class APickPowerUp : AbstractPickItem
                 print("Grog SMASH!");
                 break;
             case 21:
-                // Get Shield
-                GameObject.FindGameObjectWithTag(StaticValues.TAG_PLAYER).GetComponent<PlayerDataHandler>().ShieldActivation(true);
+                PlayerDataHandler.playerDataInstance.ShieldActivation(true);   // Get Shield
                 break;
             default:
                 print("Incorrect intelligence level." + id + itemData.itemName);
@@ -41,6 +41,7 @@ public class APickPowerUp : AbstractPickItem
     {
         TriggerPowerUpEffect();
     }
+
 
 
 

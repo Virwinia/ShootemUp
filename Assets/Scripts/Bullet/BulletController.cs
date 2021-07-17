@@ -28,8 +28,7 @@ public class BulletController : MonoBehaviour
         && !this.gameObject.CompareTag(StaticValues.TAG_PLAYER))
         {
             this.gameObject.SetActive(false);
-            GameObject.FindGameObjectWithTag(StaticValues.TAG_PLAYER).GetComponent<PlayerDataHandler>().ShieldActivation(false);
-            // ShieldActivation();
+            PlayerDataHandler.playerDataInstance.ShieldActivation(false);
         }
 
         // ... when hits a IDamageable (enemies)

@@ -22,7 +22,7 @@ public class PlayerMovement_J : MonoBehaviour
 
     private void Start()
     {
-        speed = GetComponent<PlayerDataHandler>().speed;
+        speed = PlayerDataHandler.playerDataInstance.speed;
     }
 
     private void Update()

@@ -47,7 +47,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
             Instantiate(explosionDeath, transform.position, Quaternion.identity);
         else Debug.LogWarning("Missing prefab reference explosionDeath in " + gameObject.name);
 
-        AudioManager.audioManagerInstance.PlaySound(0);
+        AudioManager.audioManagerInstance.PlaySound(3);
 
         Destroy(gameObject);
         GiveScoreAndLoot();

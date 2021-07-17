@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     int playerHealth;
     float respawnTime = 1;
     Vector2 respawnPosition = new Vector2(0.0f, -2f);
-    GameObject player;
+    GameObject playerPrefab;
 
     private void Awake()
     {
@@ -27,12 +27,9 @@ public class GameManager : MonoBehaviour
 
     void SetPlayerData(bool isNewGame)
     {
-        GameObject obj = GameObject.FindGameObjectWithTag(StaticValues.TAG_PLAYER);
-        AudioManager.audioManagerInstance.audioSource = obj.GetComponent<AudioSource>();
-
-        playerData = obj.GetComponent<PlayerDataHandler>(); // Before starting the game, values are set according the given data in PlayerSO.
-        player = playerData.objPlayer;
-
+        playerData = PlayerDataHandler.playerDataInstance; // Before starting the game, values are set according the given data in PlayerSO.
+        AudioManager.audioManagerInstance.audioSource = playerData.gameObject.GetComponent<AudioSource>();
+        playerPrefab = playerData.objPlayer;
         if (isNewGame) playerHealth = playerData.health;    // Set starting values.
     }
 
@@ -50,7 +47,7 @@ public class GameManager : MonoBehaviour
     IEnumerator GenerateNewShip()
     {
         yield return new WaitForSeconds(respawnTime);
-        Instantiate(playerData.objPlayer, respawnPosition, Quaternion.identity);
+        Instantiate(playerPrefab, respawnPosition, Quaternion.identity);
         SetPlayerData(false);
     }
 

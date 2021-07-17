@@ -5,18 +5,12 @@ using UnityEngine;
 public class PlayerShootingController : MonoBehaviour
 {
     bool isAutomatic = true;
-    int fireRate;
     int bulletCounter;
-    int activeCannons;
     Shooting[] cannons;
 
 
     private void Start()
     {
-        PlayerDataHandler playerData = GetComponent<PlayerDataHandler>();
-        fireRate = playerData.fireRate;
-        activeCannons = playerData.amountCannons;
-
         cannons = GetComponentsInChildren<Shooting>();
     }
 
@@ -31,7 +25,7 @@ public class PlayerShootingController : MonoBehaviour
             if (isAutomatic)
             {
                 bulletCounter++;
-                if (bulletCounter % fireRate == 0)
+                if (bulletCounter % PlayerDataHandler.playerDataInstance.fireRate == 0)
                 {
                     Shoot();
                 }
@@ -42,7 +36,7 @@ public class PlayerShootingController : MonoBehaviour
 
     void Shoot()
     {
-        for (int i = 0; i < activeCannons; i++)
+        for (int i = 0; i < PlayerDataHandler.playerDataInstance.amountCannons; i++)
             cannons[i].CreateProjectile();
 
     }

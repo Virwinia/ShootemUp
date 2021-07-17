@@ -14,7 +14,7 @@ public class PlayerMovement_K : MonoBehaviour
 
     private void Start()
     {
-        speed = GetComponent<PlayerDataHandler>().speed;
+        speed = PlayerDataHandler.playerDataInstance.speed;
     }
 
     private void Update() //--> controla frames

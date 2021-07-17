@@ -14,7 +14,7 @@ public class APickCoin : AbstractPickItem
     public override void DoSomething()
     {
         ScoreManager.scoreManager.AddScore(score);
-        AudioManager.audioManagerInstance.PlaySound(3);
+        AudioManager.audioManagerInstance.PlaySound(5);
     }
 
 }

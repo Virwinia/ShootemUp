@@ -4,25 +4,22 @@ using UnityEngine;
 public class CannonController : MonoBehaviour
 {
     [ReadOnly] public Shooting[] cannons;
-    int activeCannons;
     bool isPlayer, isEnemy;
 
     private void Start()
     {
+        // Set active cannons for the Player and Npcs
         if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_PLAYER))
         {
             cannons = GetComponentsInChildren<Shooting>();
-            activeCannons = GetComponent<PlayerDataHandler>().amountCannons;
-            DeactivateCannons(activeCannons);
+            DeactivateCannons(PlayerDataHandler.playerDataInstance.amountCannons);
         }
         else if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ENEMY))
         {
             if (cannons != null)
                 cannons = GetComponentsInChildren<Shooting>();
             else Debug.LogWarning("Missing Shooting component in children cannons");
-
-            activeCannons = GetComponent<NpcDataHandler>().amountCannons;
-            DeactivateCannons(activeCannons);
+            DeactivateCannons(GetComponent<NpcDataHandler>().amountCannons);
         }
     }
 
