@@ -5,10 +5,8 @@ using UnityEngine;
 public class APickGear : AbstractPickItem
 {
     [SerializeField] GameObject anim;
-
     public override void DoSomething()
     {
-        print("GEAR!!");
         PlayParticlesInPlayer();
         // do something
     }
@@ -18,6 +16,11 @@ public class APickGear : AbstractPickItem
         GameObject player = GameObject.FindGameObjectWithTag(StaticValues.TAG_PLAYER);
         GameObject obj = Instantiate(anim, player.transform.position, Quaternion.identity);
         obj.transform.SetParent(player.transform);
+    }
+
+    public override bool PowerUpIsPickable()
+    {
+        throw new System.NotImplementedException();
     }
 
 }

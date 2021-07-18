@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6097718447576201212, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: m_Size.y
-      value: 0.2
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 7664378357076789416, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: bulletVelocity.y
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7664378357076789423, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: m_Name
-      value: BeamEnemy
+      value: Beam_0_Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7664378357076789423, guid: 673186f39927baf46b3867598d526db8, type: 3}
       propertyPath: m_TagString

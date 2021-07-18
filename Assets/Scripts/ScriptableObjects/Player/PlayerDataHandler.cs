@@ -7,13 +7,14 @@ public class PlayerDataHandler : MonoBehaviour
 
     [SerializeField] PlayerSO playerData;
     [SerializeField] public GameObject shield;
-    [ReadOnly] public int health;
 
-    [HideInInspector] public float speed;
-    [HideInInspector] public int score, amountCannons, fireRate;
+    [HideInInspector] public int health;
+    public float speed;
+    public int score, amountCannons, fireRate;
     [HideInInspector] public GameObject vfxDeath;
     [HideInInspector] public GameObject objPlayer;
     [HideInInspector] public bool hasShield;
+    float startingSpeed;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class PlayerDataHandler : MonoBehaviour
         // PLAYER DATA
         score = playerData.Score;
         speed = playerData.speed;
+        startingSpeed = speed;
         health = playerData.health;
 
         // PLAYER SHIP DATA
@@ -40,7 +42,12 @@ public class PlayerDataHandler : MonoBehaviour
         hasShield = isActivated;
     }
 
+    public float StartingSpeed
+    {
+        get { return startingSpeed; }
+    }
 
+    // INFINITE SHIELD CHEAT
     // private void Update()
     // {
     //     // Cheat Shield Up/Down

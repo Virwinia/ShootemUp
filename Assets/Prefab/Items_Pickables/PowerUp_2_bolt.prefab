@@ -10,11 +10,7 @@ PrefabInstance:
     - target: {fileID: -4903839320496445151, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: itemData
       value: 
-      objectReference: {fileID: 11400000, guid: 0238836963f800c4fa51332953254549, type: 2}
-    - target: {fileID: -4903839320496445151, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
-      propertyPath: prefabItem
-      value: 
-      objectReference: {fileID: 2831670612115812364, guid: 55ad717ddfd069049aa24981092df2ef, type: 3}
+      objectReference: {fileID: 11400000, guid: 6332ce000c7770743acb610db737d602, type: 2}
     - target: {fileID: 404938729035994874, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.012355894
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.50572747
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,10 +66,10 @@ PrefabInstance:
     - target: {fileID: 3866410648587343875, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5d4b10a99357d6c43a35f12e7d8a7bf2, type: 3}
+      objectReference: {fileID: 21300000, guid: 3b10aca6199ede744ac82ba79c4f123f, type: 3}
     - target: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Name
-      value: PowerUp_1_shield
+      value: PowerUp_2_bolt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}

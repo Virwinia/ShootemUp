@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6097718447576201212}
   - component: {fileID: 7664378357076789416}
   m_Layer: 9
-  m_Name: Beam
+  m_Name: Beam_0
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.08, y: 0.2}
+  m_Size: {x: 0.08, y: 0.18}
   m_Direction: 0
 --- !u!114 &7664378357076789416
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7664378357076789418}
-  bulletVelocity: {x: 0, y: 5}
+  bulletVelocity: {x: 0, y: 6}
   damage: 1
 --- !u!1 &7664378357276278717
 GameObject:

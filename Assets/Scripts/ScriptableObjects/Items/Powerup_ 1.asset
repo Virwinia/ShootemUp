@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Powerup_ 1
   m_EditorClassIdentifier: 
   id: 21
-  itemName: 
+  itemName: Pill
   score: 0
   itemPrefab: {fileID: 1183251124515323820, guid: ea879f5b53fc10047a657c6a87d5bdb7, type: 3}

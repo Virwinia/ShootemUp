@@ -20,7 +20,8 @@ public abstract class AbstractPickItem : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_PLAYER))
         {
             DoSomething();
-            ItemDeath();
+            if (PowerUpIsPickable())
+                ItemDeath();
         }
     }
 
@@ -30,5 +31,6 @@ public abstract class AbstractPickItem : MonoBehaviour
     }
 
     public abstract void DoSomething();
+    public abstract bool PowerUpIsPickable();
 
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Powerup_ 0
   m_EditorClassIdentifier: 
   id: 20
-  itemName: 
+  itemName: Shield
   score: 0
   itemPrefab: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}

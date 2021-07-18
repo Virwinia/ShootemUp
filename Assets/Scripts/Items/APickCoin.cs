@@ -17,4 +17,9 @@ public class APickCoin : AbstractPickItem
         AudioManager.audioManagerInstance.PlaySound(5);
     }
 
+    public override bool PowerUpIsPickable()
+    {
+        throw new System.NotImplementedException();
+    }
+
 }

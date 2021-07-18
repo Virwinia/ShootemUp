@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [ReadOnly] public PlayerDataHandler playerData;
     [SerializeField] GameObject gameOverScreen; //FUTRE -- TODO in another script -script UI
 
-    int playerHealth;
+    public int playerHealth;
     float respawnTime = 1;
     Vector2 respawnPosition = new Vector2(0.0f, -2f);
     GameObject playerPrefab;

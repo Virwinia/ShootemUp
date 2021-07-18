@@ -694,7 +694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chanceToLootPowerUp: 0
   items:
-  - {fileID: 11400000, guid: 0238836963f800c4fa51332953254549, type: 2}
+  - {fileID: 11400000, guid: 6332ce000c7770743acb610db737d602, type: 2}
   bezierValue:
     serializedVersion: 2
     m_Curve:

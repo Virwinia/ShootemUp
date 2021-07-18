@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99ef922bcc270ed4490996e82fcbac95, type: 3}
-  m_Name: Coin_0
+  m_Name: Powerup_ 2
   m_EditorClassIdentifier: 
-  id: 0
-  coinName: coin_0
-  score: 1000
-  coinPrefab: {fileID: 1159202402486845641, guid: 01470433919d00f419d123674421f5af, type: 3}
+  id: 22
+  itemName: Bolt
+  score: 0
+  itemPrefab: {fileID: 1183251124515323820, guid: 498e598b905c81a459573a78f86005b7, type: 3}

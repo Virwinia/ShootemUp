@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CannonController : MonoBehaviour
 {
-    [ReadOnly] public Shooting[] cannons;
+    public Shooting[] cannons;
     bool isPlayer, isEnemy;
 
     private void Start()
@@ -11,7 +11,7 @@ public class CannonController : MonoBehaviour
         // Set active cannons for the Player and Npcs
         if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_PLAYER))
         {
-            cannons = GetComponentsInChildren<Shooting>();
+            // cannons = GetComponentsInChildren<Shooting>();
             DeactivateCannons(PlayerDataHandler.playerDataInstance.amountCannons);
         }
         else if (gameObject.layer == LayerMask.NameToLayer(StaticValues.LAYER_ENEMY))
@@ -26,10 +26,12 @@ public class CannonController : MonoBehaviour
     void DeactivateCannons(int activeCannons)
     {
         for (int i = activeCannons; i < cannons.Length; i++)
-        {
             cannons[i].gameObject.SetActive(false);
-        }
     }
 
-
+    public void ActivateCannons(int activeCannons)
+    {
+        for (int i = 0; i < activeCannons; i++)
+            cannons[i].gameObject.SetActive(true);
+    }
 }

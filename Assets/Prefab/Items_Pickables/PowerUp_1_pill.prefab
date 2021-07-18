@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4903839320496445151, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0238836963f800c4fa51332953254549, type: 2}
+    - target: {fileID: -4903839320496445151, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
+      propertyPath: prefabItem
+      value: 
+      objectReference: {fileID: 2831670612115812364, guid: 55ad717ddfd069049aa24981092df2ef, type: 3}
     - target: {fileID: 404938729035994874, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21,11 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.57221866
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.29853642
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1952644087148159409, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a3c90c40400df49439fc49c542ccf172, type: 3}
     - target: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Name
-      value: PowerUp_2_pill
+      value: PowerUp_1_pill
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}

@@ -14,6 +14,11 @@ public class PlayerMovement_K : MonoBehaviour
 
     private void Start()
     {
+        SetSpeedInPlayer();
+    }
+
+    public void SetSpeedInPlayer()
+    {
         speed = PlayerDataHandler.playerDataInstance.speed;
     }
 
