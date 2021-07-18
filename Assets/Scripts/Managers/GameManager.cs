@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         else if (gameManagerInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);  // By adding this line, Singleton is a Manager,it persists between different scenes. 
 
+        if (gameOverScreen.activeInHierarchy) gameOverScreen.SetActive(false);
         SetPlayerData(true);
     }
 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         if (playerHealth <= 0)
         {
             if (gameOverScreen != null) gameOverScreen.SetActive(true);
+            ScoreManager.scoreManager.ShowRecordInGameOverScreen();
             ScoreManager.scoreManager.SaveDataInPlayerPrefs();
         }
         else { StartCoroutine(GenerateNewShip()); }

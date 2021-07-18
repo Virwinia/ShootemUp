@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb8713c1f3b8a8248ba6e4b7bd7691c2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 0.9725491, b: 0.854902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   rb: {fileID: 7664378357076789418}
   bulletVelocity: {x: 0, y: 6}
   damage: 1
+  isPlayer: 0
 --- !u!1 &7664378357276278717
 GameObject:
   m_ObjectHideFlags: 0

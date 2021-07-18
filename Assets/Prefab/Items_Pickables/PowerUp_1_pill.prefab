@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 3866410648587343875, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a3c90c40400df49439fc49c542ccf172, type: 3}
+      objectReference: {fileID: 21300000, guid: 23de19a4cc4fef547a2d179c9e3a3813, type: 3}
     - target: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Name
       value: PowerUp_1_pill

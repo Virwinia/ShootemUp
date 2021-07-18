@@ -62,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 3866410648587343875, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f1d8e0aa64247834698f65cbeb267998, type: 3}
+      objectReference: {fileID: 21300000, guid: 8deb3f0d038a83a4b871296b83c86fe4, type: 3}
     - target: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Name
       value: PowerUp_4_thing

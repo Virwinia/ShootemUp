@@ -62,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 3866410648587343875, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: abddbe9799d02404cb31fce4e97f65ca, type: 3}
+      objectReference: {fileID: 21300000, guid: e1ceec28a18946c46a52b1a0a9c6fce8, type: 3}
     - target: {fileID: 4902957333519516584, guid: 35a244eee531ab3438d09dadc14dceb6, type: 3}
       propertyPath: m_Name
       value: PowerUp_3_star

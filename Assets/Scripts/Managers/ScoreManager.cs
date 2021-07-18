@@ -12,11 +12,10 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] ScoreSaveData ScoreData;    // This class contains the score data.
     [ReadOnly] [SerializeField] int playerScore;
     PlayerDataHandler playerData;
-
-    [Space]
-    [Header("UI ---")]
-    [SerializeField] Text scoreText;
-    [SerializeField] Text scoreRecordText;
+    [Tooltip("Text shows in game, on top left side of the screen.")]
+    [SerializeField] Text txtScoreRecordIG, txtMyScoreIG;      // Text in game
+    [Tooltip("Text shows on Game Over screen, in the middle of the screen.")]
+    [SerializeField] Text txtRecordTitle, txtScoreGO;  // Text on screen game over
 
     private void Awake()
     {
@@ -30,14 +29,31 @@ public class ScoreManager : MonoBehaviour
 
         LoadDataFromPlayerPrefs();
 
-        scoreRecordText.text = "Record: " + ScoreData.scoreMax;
-        scoreText.text = "Score: " + playerScore.ToString();
+        txtScoreRecordIG.text = "Record: " + ScoreData.scoreMax;
+        txtMyScoreIG.color = new Color32(234, 58, 109, 200);
+        txtMyScoreIG.text = "Score: " + playerScore.ToString();
+    }
+
+    public void ShowRecordInGameOverScreen()
+    {
+        if (playerScore > ScoreData.scoreMax)
+        {
+            txtRecordTitle.text = "New Record!";
+            txtScoreGO.text = playerScore.ToString();
+        }
+        else
+        {
+            txtRecordTitle.text = "Yet, unbeatable...";
+            txtScoreGO.text = ScoreData.scoreMax.ToString();
+        }
     }
 
     public void AddScore(int n) //---> FUTURE ME: pasar a interfaz??
     {
         playerScore += n;
-        scoreText.text = "Score: " + playerScore.ToString();
+        txtMyScoreIG.text = "Score: " + playerScore.ToString();
+        if (playerScore > ScoreData.scoreMax)
+            txtMyScoreIG.color = new Color32(90, 248, 218, 200);
     }
 
     //------------------
