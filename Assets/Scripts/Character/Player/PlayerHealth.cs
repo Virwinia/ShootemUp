@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // If has not shield, the Player dies on collision with any npc.
