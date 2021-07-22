@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1836085034669822683}
   m_Layer: 7
-  m_Name: LevelUp
+  m_Name: not-used_LevelUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 2347479840673730425}
   - component: {fileID: 2347479840673730432}
   - component: {fileID: 2347479840673730439}
-  - component: {fileID: 2347479840673730424}
+  - component: {fileID: 4346855205387627396}
   - component: {fileID: 2347479840673730436}
   - component: {fileID: 2347479840673730434}
   - component: {fileID: 2347479840673730426}
@@ -850,13 +850,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2347479840673730447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c122fbf60648611409d5325393f498cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2347479840673730433}
-  canvasStick: {fileID: 0}
   xLeftLimit: -2.1
   xRightLimit: 2.1
   yDownLimit: -4.2
@@ -875,12 +874,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2347479840673730433}
   canvasStick: {fileID: 0}
-  joystickMobile: {fileID: 0}
   xLeftLimit: -2.1
   xRightLimit: 2.1
   yDownLimit: -4.2
   yUpLimit: 3
---- !u!114 &2347479840673730424
+--- !u!114 &4346855205387627396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -889,9 +887,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2347479840673730447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cda93ec9b16cb540bf279a5d1964c1d, type: 3}
+  m_Script: {fileID: 11500000, guid: bcb7ce3e32d868241ad206b72e09cb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 150
 --- !u!114 &2347479840673730436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +915,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf319640269b0d4b9658f2be3bdbac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannons: []
+  cannons:
+  - {fileID: 2347479841149495106}
+  - {fileID: 2347479840048766021}
+  - {fileID: 2347479840735702973}
+  - {fileID: 2347479841271122155}
+  - {fileID: 2347479840088669205}
 --- !u!114 &2347479840673730426
 MonoBehaviour:
   m_ObjectHideFlags: 0

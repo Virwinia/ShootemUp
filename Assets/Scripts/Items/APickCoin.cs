@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class APickCoin : AbstractPickItem
@@ -19,7 +18,9 @@ public class APickCoin : AbstractPickItem
 
     public override bool PowerUpIsPickable()
     {
-        throw new System.NotImplementedException();
+        if (itemData.id < 20) return true;
+        else return false;
     }
+
 
 }

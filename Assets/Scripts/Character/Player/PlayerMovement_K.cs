@@ -5,10 +5,7 @@ using UnityEngine;
 public class PlayerMovement_K : MonoBehaviour
 {
     [Space] [SerializeField] Rigidbody2D rb;
-    [SerializeField] GameObject canvasStick;
-
     [ReadOnly] [SerializeField] float xLeftLimit, xRightLimit, yDownLimit, yUpLimit;
-
     float speed, horizontalMovement, verticalMovement;
     Vector2 shipVelocity;
 
@@ -36,10 +33,10 @@ public class PlayerMovement_K : MonoBehaviour
         rb.position = new Vector3(Mathf.Clamp(rb.position.x, xLeftLimit, xRightLimit), Mathf.Clamp(rb.position.y, yDownLimit, yUpLimit), 0);
     }
 
-    private void OnEnable()
-    {
-        if (canvasStick != null)
-            canvasStick.SetActive(false);
-    }
+    // private void OnEnable()
+    // {
+    //     if (canvasStick != null)
+    //         canvasStick.SetActive(false);
+    // }
 
 }

@@ -6,24 +6,27 @@ public class PlayerMovement_J : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     [SerializeField] GameObject canvasStick;
-    [SerializeField] JoyStickControlsMobile joystickMobile;
-
-    // [SerializeField] float speed;
-
     [ReadOnly] [SerializeField] float xLeftLimit, xRightLimit, yDownLimit, yUpLimit;
-
     float speed, horizontalMovement, verticalMovement;
     Vector2 shipVelocity;
-
-    private void Awake()
-    {
-        joystickMobile = FindObjectOfType<JoyStickControlsMobile>();
-    }
+    JoyStickControlsMobile joystickMobile;
 
     private void Start()
     {
+        if (canvasStick != null)
+            if (!joystickMobile.gameObject.activeInHierarchy) canvasStick.SetActive(true);
+            else Debug.Log("Missing reference for " + joystickMobile.name + " in " + this.gameObject.name);
+
+        joystickMobile = canvasStick.GetComponentInChildren<JoyStickControlsMobile>();
+
         SetSpeedInPlayer();
     }
+
+    // private void OnEnable()
+    // {
+    //     if (canvasStick != null)
+    //         canvasStick.SetActive(true);
+    // }
 
     public void SetSpeedInPlayer()
     {
@@ -44,9 +47,4 @@ public class PlayerMovement_J : MonoBehaviour
         rb.position = new Vector2(Mathf.Clamp(rb.position.x, xLeftLimit, xRightLimit), Mathf.Clamp(rb.position.y, yDownLimit, yUpLimit));
     }
 
-    private void OnEnable()
-    {
-        if (canvasStick != null)
-            canvasStick.SetActive(true);
-    }
 }

@@ -1,11 +1,14 @@
 
+using UnityEngine;
+
 public class APickPowerUp : AbstractPickItem
 {
     int id;
     PlayerDataHandler playerData;
     bool hasPickedHealth = false;
-    bool hasPîckedShield = false;
+    bool hasPickedShield = false;
     bool hasPickedBolt = false;
+
 
     private void Start()
     {
@@ -30,7 +33,7 @@ public class APickPowerUp : AbstractPickItem
             case 20:
                 // Get shield
                 PlayerDataHandler.playerDataInstance.ShieldActivation(true);
-                hasPîckedShield = true;
+                hasPickedShield = true;
                 break;
             default:
                 break;
@@ -51,7 +54,7 @@ public class APickPowerUp : AbstractPickItem
             case 21:
                 return hasPickedHealth;
             case 20:
-                return hasPîckedShield;
+                return hasPickedShield;
             default:
                 break;
         }

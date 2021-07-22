@@ -1,5 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
+/*
+    THIS SCRIPT IS NOT IMPLEMENTED YET
+*/
+
+
+
 using UnityEngine;
 
 public class APickGear : AbstractPickItem
@@ -8,7 +13,6 @@ public class APickGear : AbstractPickItem
     public override void DoSomething()
     {
         PlayParticlesInPlayer();
-        // do something
     }
 
     void PlayParticlesInPlayer()

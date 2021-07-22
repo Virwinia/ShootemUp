@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: itemData
       value: 
       objectReference: {fileID: 11400000, guid: 2940750f98c2464459b5676c3128bf1f, type: 2}
+    - target: {fileID: 51004248535382066, guid: b51f63fdd6fa3294f88114ebb65d9439, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 093278ef3eeae1748b908862b0dc628c, type: 2}
     - target: {fileID: 1952644087148159409, guid: b51f63fdd6fa3294f88114ebb65d9439, type: 3}
       propertyPath: m_RootOrder
       value: 0

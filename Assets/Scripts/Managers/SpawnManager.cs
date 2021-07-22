@@ -7,11 +7,11 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager spawnManager;
 
     public EnemySpawner[] spawners;
-    [SerializeField] float timeBetweenWave, timeFirstWave;
-
-    [SerializeField] int enemiesInScene = 0;
+    [SerializeField] float timeFirstWave, timeBetweenWave;
     [SerializeField] int enemiesPerWave = 5;
-    [SerializeField] int enemyCapacity;
+
+    int enemiesInScene = 0;
+    int enemyCapacity;
     bool canSpawn;
 
     private void Awake()

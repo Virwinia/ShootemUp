@@ -21,7 +21,10 @@ public class GameManager : MonoBehaviour
         if (gameManagerInstance == null) gameManagerInstance = this;
         else if (gameManagerInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);  // By adding this line, Singleton is a Manager,it persists between different scenes. 
+    }
 
+    private void Start()
+    {
         if (gameOverScreen.activeInHierarchy) gameOverScreen.SetActive(false);
         SetPlayerData(true);
     }
@@ -52,8 +55,5 @@ public class GameManager : MonoBehaviour
         Instantiate(playerPrefab, respawnPosition, Quaternion.identity);
         SetPlayerData(false);
     }
-
-
-
 }
 

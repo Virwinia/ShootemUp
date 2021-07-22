@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   itemName: 
-  score: 250
+  score: 500
   itemPrefab: {fileID: 4944920635408586646, guid: d0dd68bd8dcf677469f03e82d7ce92dc, type: 3}

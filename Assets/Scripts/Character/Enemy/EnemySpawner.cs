@@ -14,7 +14,8 @@ public class EnemySpawner : MonoBehaviour
     [Space] [SerializeField] GameObject[] prefabEnemy;
     [Space] [SerializeField] float spawnTime = 2;
     public int enemiesPerSpawn = 3;
-    public int spawnedEnemies;
+    [HideInInspector] public int spawnedEnemies;
+
     bool canSpawn;
 
     public void SpawningProcess()

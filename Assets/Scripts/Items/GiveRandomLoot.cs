@@ -8,42 +8,53 @@ using UnityEngine;
 
 public class GiveRandomLoot : MonoBehaviour
 {
-    [Header("Looter ---")]
-    [Tooltip("How many options has the player to get a powerup instead a coin.")]
-    [Range(0, 1)] [SerializeField] float chanceToLootPowerUp;
 
     [Space]
     [Header("Reward Coin ---")]
     [Tooltip("Coins to loot.")]
-    [SerializeField] ItemSO[] items;
+    [Range(0, 1)] [SerializeField] float chanceToGetReward;
+    [SerializeField] ItemSO[] coins;
     [Tooltip("The randomness will take values from a curve.")]
     [SerializeField] AnimationCurve bezierValue;
+
+    [Space]
+    [Header("Looter ---")]
+    [Tooltip("How many options has the player to get a powerup instead a coin.")]
+    [Range(0, 1)] [SerializeField] float chanceToLootPowerUp;
+    [SerializeField] ItemSO[] powerUps;
     float curveRandomness;
 
     private void Start()
     {
-        if (items.Length == 0) Debug.LogWarning("<b><color=blue>Items array is empty</color></b> in " + gameObject.name);
+        if (coins.Length == 0) Debug.LogWarning("<b><color=blue>Items array is empty</color></b> in " + gameObject.name);
     }
 
     public void CalculateLootingChances()
     {
-        float dice = Random.value;  // roll a dice to know if the player gets something
+        float dice = Random.value;      // Roll a dice to know if the player gets something.
+        if (dice <= chanceToGetReward)
+        {
+            dice = Random.value;        // If gets reward, the dice rolls once again to determine the reward (coin or powerUp).
 
-        if (dice <= chanceToLootPowerUp)
-        {
-            //GET POWER UP
-            print("power up");
-        }
-        else
-        {
-            CalculateRandomInBezier();
-            GetCoin();
+            if (dice <= chanceToLootPowerUp)
+                GetPowerUp();
+            else
+            {
+                CalculateRandomInBezier();
+                GetCoin();
+            }
         }
     }
 
-    // void GetPowerUp()
-    // {
-    // }
+    void GetPowerUp()
+    {
+        float dice = Random.value * 100;            // Chance will be a value from 0 to 100, and random.value only returns values in the range 0-1.
+        int pChance = (int)100 / powerUps.Length;   // Calculate proportionally to lenght, the chance to be given.
+
+        for (int i = 0; i < powerUps.Length; i++)
+            if (dice > pChance * i && dice <= pChance * (i + 1))
+                CreateLoot(powerUps[i]);
+    }
 
     void CalculateRandomInBezier()
     {
@@ -52,20 +63,22 @@ public class GiveRandomLoot : MonoBehaviour
 
     void GetCoin()
     {
-        if (items.Length == 0) return;
-        int nChance = (int)(100 / items.Length);    // Distribute the weight between the items in the array.
-
-        for (int i = 0; i < items.Length; i++)
+        if (coins.Length == 0) return;
+        int nChance = (int)(100 / coins.Length);    // Distribute the weight between the items in the array.
+        for (int i = 0; i < coins.Length; i++)
         {
             if (curveRandomness > nChance * i && curveRandomness <= nChance * (i + 1))
-                CreateCoin(items[i]);
+            {
+                CreateLoot(coins[i]);
+            }
         }
     }
 
-    void CreateCoin(ItemSO obj)
+    void CreateLoot(ItemSO obj)
     {
         if (obj != null) Instantiate(obj.itemPrefab, this.transform.position, Quaternion.identity);
         else return;
     }
+
 
 }
