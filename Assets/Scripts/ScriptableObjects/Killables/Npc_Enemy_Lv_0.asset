@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 0
   npcName: npc_enemy_lv_0
   amountCannons: 1
-  fireRate: 500
+  fireRate: 80
   health: 1
   score: 100
   chanceToLoot: 0.03

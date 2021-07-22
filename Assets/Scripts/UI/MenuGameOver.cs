@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,11 +15,8 @@ using UnityEngine.UI;
 
 public class MenuGameOver : MonoBehaviour
 {
-    [Space]
-    [SerializeField] Text txtGameOver;
-
-    [Space]
-    [SerializeField] Text recordTitle;
+    [Space] [SerializeField] Text txtGameOver;
+    [Space] [SerializeField] Text recordTitle;
     public Text maxScore;
 
     private void Start()
@@ -33,27 +29,29 @@ public class MenuGameOver : MonoBehaviour
         recordTitle.text = isBeaten ? "You beat the record!" : "Yet, unbeatable...";
     }
 
-    public void GoToScene(string sceneName) // --- not used yet
+    public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-    }
-
-    public void ReloadScene()               // --- not used yet - Play Again
-    {
-        // Check if the name of the current Active Scene is your first Scene.
-        if (SceneManager.GetActiveScene().name != StaticValues.SCENE_GAME)
-            GoToScene(StaticValues.SCENE_GAME);
     }
 
     // BUTTON --- Call on click the following events
     public void PlayGame()                  // Call from button Play in scene SpaceScene
     {
         GoToScene(StaticValues.SCENE_GAME);
+        AudioManager.audioManagerInstance.PlaySound(7);
     }
 
     public void QuitGame()                  // Call from button Quit in scene SpaceScene
     {
         Application.Quit();
+        AudioManager.audioManagerInstance.PlaySound(8);
     }
+
     //------------------
+    // public void ReloadScene()               // --- not used yet - Play Again
+    // {
+    //     // Check if the name of the current Active Scene is your first Scene.
+    //     if (SceneManager.GetActiveScene().name != StaticValues.SCENE_GAME)
+    //         GoToScene(StaticValues.SCENE_GAME);
+    // }
 }

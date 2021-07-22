@@ -13,7 +13,7 @@ public class APickCoin : AbstractPickItem
     public override void DoSomething()
     {
         ScoreManager.scoreManager.AddScore(score);
-        AudioManager.audioManagerInstance.PlaySound(5);
+        AudioManager.audioManagerInstance.PlaySound(6);
     }
 
     public override bool PowerUpIsPickable()

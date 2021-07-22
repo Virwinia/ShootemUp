@@ -29,16 +29,19 @@ public class MenuMain : MonoBehaviour
     public void GoToGame()              // Called in Inspector > Canvas > ButtonPlay > OnClick.
     {
         SceneManager.LoadScene(1);
+        AudioManager.audioManagerInstance.PlaySound(0);
     }
 
     public void QuitGame()              // Called in Inspector > Canvas > ButtonQuit > OnClick.
     {
         Application.Quit();
+        AudioManager.audioManagerInstance.PlaySound(1);
     }
 
     public void HideButtonryMenu()      // Called in Inspector > Canvas > ButtonryMenu > Button Info > OnClick.
     {
         CanvasSwitcher(buttonryMenu, 0);
+        AudioManager.audioManagerInstance.PlaySound(0);
     }
 
     public void ReturnBackToMainMenu()  // Called in Inspector > Canvas > ButtonryInfo > Button Back > OnClick.
@@ -50,6 +53,8 @@ public class MenuMain : MonoBehaviour
         }
         CanvasSwitcher(buttonryInfo, 0);
         CanvasSwitcher(buttonryMenu, 1);
+
+        AudioManager.audioManagerInstance.PlaySound(1);
     }
     // --------------
 

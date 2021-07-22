@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class ScoreManager : MonoBehaviour
 {
@@ -11,16 +10,9 @@ public class ScoreManager : MonoBehaviour
     [Header("Player Score ---")]
     [SerializeField] ScoreSaveData ScoreData;               // This class contains the score data.
     [ReadOnly] [SerializeField] int playerScore;
-    [Space]
-    [SerializeField] MenuInGame menuInGame;
+    [Space] [SerializeField] MenuInGame menuInGame;
     [SerializeField] MenuGameOver menuGameOver;
-
     PlayerDataHandler playerData;
-
-    //DEPRECATED -- [Tooltip("Text shows in game, on top left side of the screen.")]
-    //DEPRECATED --  [SerializeField] Text txtScoreRecordIG, txtMyScoreIG;   // Text in game
-    //DEPRECATED --  [Tooltip("Text shows on Game Over screen, in the middle of the screen.")]
-    //DEPRECATED --  [SerializeField] Text txtRecordTitleGO, txtMyScoreGO;   // Text on screen game over
 
     private void Awake()
     {
@@ -36,25 +28,17 @@ public class ScoreManager : MonoBehaviour
 
         menuInGame.MyScore(playerScore);
         menuInGame.Record(ScoreData.scoreMax);
-
-        //DEPRECATED -- txtScoreRecordIG.text = "Record: " + ScoreData.scoreMax;
-        //DEPRECATED -- txtMyScoreIG.text = "Score: " + playerScore.ToString();
-        //DEPRECATED -- txtMyScoreIG.color = new Color32(234, 58, 109, 160);
     }
 
     public void ShowRecordInGameOverScreen()
     {
         if (playerScore > ScoreData.scoreMax)
         {
-            // DEPRECATED --txtRecordTitleGO.text = "You beated the record!";
-            // DEPRECATED --txtMyScoreGO.text = playerScore.ToString();
             menuGameOver.RecordWasBeaten(true);
             menuGameOver.maxScore.text = playerScore.ToString();
         }
         else
         {
-            // DEPRECATED --txtRecordTitleGO.text = "Yet, unbeatable...";
-            // DEPRECATED --txtMyScoreGO.text = ScoreData.scoreMax.ToString();
             menuGameOver.RecordWasBeaten(false);
             menuGameOver.maxScore.text = ScoreData.scoreMax.ToString();
         }
@@ -66,9 +50,6 @@ public class ScoreManager : MonoBehaviour
 
         menuInGame.MyScore(playerScore);
         if (playerScore > ScoreData.scoreMax) menuInGame.MyScoreBreaksTheRecord();
-
-        //DEPRECATED -- txtMyScoreIG.text = "Score: " + playerScore.ToString();
-        //DEPRECATED -- txtMyScoreIG.color = new Color32(90, 248, 218, 160);
     }
 
 

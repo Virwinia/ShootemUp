@@ -75,6 +75,8 @@ public class MenuInGame : MonoBehaviour
             fadeIn.SetAlphaValueToZero();   // Fade values set to zero,
             ShowButtonConfirmation();       // and buttons, buttonPauseFake and buttonPause, are switched again.
         }
+
+        AudioManager.audioManagerInstance.PlaySound(9);
     }
 
     void ShowButtonConfirmation()   // Listener - delegate is in FadeIn script and is released when fading (textNoPause) is done.

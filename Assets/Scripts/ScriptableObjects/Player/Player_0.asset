@@ -18,7 +18,7 @@ MonoBehaviour:
   speed: 2.3
   health: 3
   cannonAmount: 1
-  fireRate: 60
+  fireRate: 45
   playerShip: {fileID: 21300000, guid: 22291e2d091ed26438e3963f5004acb4, type: 3}
   prefabExplosionDeath: {fileID: 8862202396140944993, guid: b079058702be76d4ab6e316546a07ad1, type: 3}
   prefabPlayer: {fileID: 2347479840673730447, guid: 625146a326873b4488585a7f437164b7, type: 3}
